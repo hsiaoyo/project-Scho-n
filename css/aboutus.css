@@ -8,6 +8,25 @@ img{
 a{
   color: #494949;
 }
+#logo img{
+  width: 50%;
+}
+#logo a{
+  font-family: 'Montserrat:700', sans-serif;
+  color: #4b4b4b;
+  font-size: 0.5rem;
+}
+#nav{
+  padding: 30px;
+}
+#nav .navbar-toggler {
+  border-color: transparent;
+  outline: none;
+}
+#navbarNavDropdown img{
+  margin: 5px;
+  width: 10%;
+}
 #header{
   display: flex;
   justify-content: center;
@@ -96,3 +115,33 @@ h2.title{
   font-size: 1rem;
   color: #ADADAD;
 }
+/* .wrapper1{
+  display:grid;
+  grid-template-columns: 347px 543px;
+  grid-template-rows: 220px 308px;
+  grid-gap: 10px;
+  grid-template-areas:
+  "box1 box3"
+  "box2 box3";
+}
+.box1{
+  grid-area: box1;
+}
+.box2{
+  grid-area: box2;
+}
+.box3{
+  grid-area: box3;
+}
+.box4{
+  grid-area: box4;
+}
+.box5{
+  grid-area: box5;
+}
+.box6{
+  grid-area: box6;
+}
+.box7{
+  grid-area: box7;
+} */
