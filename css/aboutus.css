@@ -61,3 +61,38 @@ h2.title{
   font-size: 0.1rem;
   padding-right: 2px;
 }
+.member{
+  max-width: 280px;
+  margin: 0 auto;
+}
+#ourteam h3{
+  margin:10px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Montserrat:700', sans-serif;
+  font-weight: bolder;
+  font-size: 0.6rem;
+  color: #494949;
+}
+#ourteam h4{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.1rem;
+  color: #A0A0A0;
+}
+
+.member:last-child{
+  position: relative;
+  width:280px;
+  height: auto;
+  text-align: center;
+}
+.you h2{
+  position:absolute;
+  top: 35%;
+  left: 40%;
+  font-family: 'Montserrat:700', sans-serif;
+  font-size: 1rem;
+  color: #ADADAD;
+}
