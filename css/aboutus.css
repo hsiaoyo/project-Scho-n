@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,800|Source+Sans+Pro:300,400&display=swap');
 ul{
   list-style-type: none;
+  margin: 0;
 }
 img{
   width: 100%;
@@ -69,14 +70,14 @@ h2.title{
   font-size: 1rem;
 }
 .follow{
-  margin: 20px -0px;
+  margin: 20px 0;
 }
-.follow h4{
+.follow h4, .get-more-info h4{
   font-family: 'Open Sans:800', sans-serif;
   font-size: 0.4rem;
   color: #494949;
 }
-.follow i{
+.follow i, .social-media i{
   font-size: 0.1rem;
   padding-right: 2px;
 }
@@ -145,3 +146,39 @@ h2.title{
 .box7{
   grid-area: box7;
 } */
+.company-info{
+  margin: 10px;
+}
+.company-info img{
+  width: 30%;
+}
+.company-info h4, .company-info a, .learn-more a, .get-more-info h5{
+  font-size: 0.5rem;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  color:#868686;
+}
+.learn-more button, .get-more-info h4{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6rem;
+  color: #575757;
+}
+.get-more-info{
+  margin: 10px;
+}
+.get-more-info .rounded-pill{
+  margin: 10px 0 20px;
+  padding: 4px;
+  width: 220px;
+  height: 30px;
+  background: #E2E2E2;
+  color: #8C8C8C;
+}
+.copyright{
+  text-align: center;
+  color: #868686;
+  font-size: 0.3rem;
+}
+.payment{
+  margin: 0.5rem auto;
+}
