@@ -10,34 +10,45 @@ img{
 a{
   color: #494949;
 }
+#nav{
+  padding: 20px 0;
+}
+#nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* #logo{
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+} */
+
 #logo img{
-  width: 50%;
+  width: 60%;
 }
 #logo a{
+  padding-right: 10px;
   font-family: 'Montserrat:700', sans-serif;
   color: #4b4b4b;
   font-size: 0.5rem;
 }
-#nav{
-  display: flex;
-  justify-content: space-around;
-  padding: 30px;
-}
-#nav .navbar-toggler {
-  border-color: transparent;
-  outline: none;
-}
-/* #nav li{
+
+
+#nav li{
   margin-right: 15px;
   float: left;
   font-family: 'Montserrat:400', sans-serif;
   text-transform: uppercase;
   color: #313131;
-  font-size: 14px;
-} */
-#navbarNavDropdown img{
+  font-size: 0.8rem;
+}
+ul.navbar{
+  display: none;
+}
+img.tools{
   margin: 5px;
-  width: 30px;
+  width: 20px;
 }
 #header{
   display: flex;
@@ -312,6 +323,18 @@ img.payment{
   }
 }
 @media (min-width:992px){
+.navbar-toggler{
+  display:none;
+}
+ul.navbar{
+  display: flex;
+}
+.navbar-toggler{
+  display:none;
+}
+ul.navbar{
+  display: flex;
+}
   #footer{
     margin: 20px 0;
   }
