@@ -114,12 +114,46 @@ h2.title{
   font-size: 0.1rem;
   color: #A0A0A0;
 }
+.thumbnail{
+  position: relative;
+}
 
 .member:last-child{
-  position: relative;
   width:280px;
   height: auto;
   text-align: center;
+}
+.mask{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #F2F2F2;
+  opacity: 0;
+  transition:all .4s linear;
+}
+.mask:hover{
+  opacity: 0.8392156862745098;
+}
+.mask div{
+  position: relative;
+  margin: 0 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #515151;
+  text-align: center;
+  color: #FFFFFF;
+}
+.mask i{
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  font-size: 1.2rem;
 }
 .you h2{
   position:absolute;
