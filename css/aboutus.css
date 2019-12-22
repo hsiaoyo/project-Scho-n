@@ -10,6 +10,9 @@ img{
 a{
   color: #494949;
 }
+.container-fluid{
+  padding: 0;
+}
 #nav{
   padding: 20px 0;
 }
@@ -131,6 +134,7 @@ h2.title{
 }
 
 .member:last-child{
+  padding: 40px;
   width:280px;
   height: auto;
   text-align: center;
@@ -167,6 +171,7 @@ h2.title{
   left: 20%;
   font-size: 1.2rem;
 }
+
 .you h2{
   position:absolute;
   top: 35%;
@@ -175,10 +180,14 @@ h2.title{
   font-size: 1rem;
   color: #ADADAD;
 }
+
+.wrapper1.col-6, .wrapper2.col-6{
+  padding: 10px;
+}
 .wrapper1{
   display:grid;
-  grid-template-columns: 347px 543px;
-  grid-template-rows: 220px 308px;
+  grid-template-columns: 39% 61%;
+  grid-template-rows: 39% 61%;
   grid-gap: 10px;
   grid-template-areas:
   "box1 box3"
@@ -193,7 +202,16 @@ h2.title{
 .box3{
   grid-area: box3;
 }
-/* .box4{
+.wrapper2{
+  display:grid;
+  grid-template-columns: 24% 39% 37%;
+  grid-template-rows: 58% 42%;
+  grid-gap: 10px;
+  grid-template-areas:
+  "box4 box5 box7"
+  "box6 box6 box7";
+}
+.box4{
   grid-area: box4;
 }
 .box5{
@@ -204,7 +222,7 @@ h2.title{
 }
 .box7{
   grid-area: box7;
-} */
+}
 .company-info{
   margin: 10px 0;
 }
