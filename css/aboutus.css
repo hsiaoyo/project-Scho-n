@@ -18,15 +18,25 @@ a{
   font-size: 0.5rem;
 }
 #nav{
+  display: flex;
+  justify-content: space-around;
   padding: 30px;
 }
 #nav .navbar-toggler {
   border-color: transparent;
   outline: none;
 }
+/* #nav li{
+  margin-right: 15px;
+  float: left;
+  font-family: 'Montserrat:400', sans-serif;
+  text-transform: uppercase;
+  color: #313131;
+  font-size: 14px;
+} */
 #navbarNavDropdown img{
   margin: 5px;
-  width: 10%;
+  width: 30px;
 }
 #header{
   display: flex;
@@ -116,7 +126,7 @@ h2.title{
   font-size: 1rem;
   color: #ADADAD;
 }
-/* .wrapper1{
+.wrapper1{
   display:grid;
   grid-template-columns: 347px 543px;
   grid-template-rows: 220px 308px;
@@ -134,7 +144,7 @@ h2.title{
 .box3{
   grid-area: box3;
 }
-.box4{
+/* .box4{
   grid-area: box4;
 }
 .box5{
@@ -168,11 +178,12 @@ h2.title{
 }
 .get-more-info .rounded-pill{
   margin: 10px 0 20px;
-  padding: 4px;
+  padding: 6px;
   width: 220px;
   height: 30px;
   background: #E2E2E2;
   color: #8C8C8C;
+  font-size: 0.5rem;
 }
 .copyright{
   text-align: center;
