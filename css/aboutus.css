@@ -14,9 +14,11 @@ a{
   padding: 0;
 }
 #nav{
-  padding: 20px 0;
+  padding:30px;
+  margin: 10px 0;
 }
-#nav .container{
+#nav .container-fluid{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,13 +33,19 @@ a{
   width: 60%;
 }
 #logo a{
-  padding-right: 10px;
+  display: block;
+  padding:5px 0;
   font-family: 'Montserrat:700', sans-serif;
   color: #4b4b4b;
   font-size: 0.5rem;
 }
 
-
+.burger div{
+  margin: 5px;
+  width: 25px;
+  height: 3px;
+  background-color: #313131;
+}
 #nav li{
   margin-right: 15px;
   float: left;
@@ -47,7 +55,16 @@ a{
   font-size: 0.8rem;
 }
 ul.navbar{
-  display: none;
+  position:absolute;
+  padding: 20px;
+  top:45px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30vh;
+  height: 80vh;
+  background: #F6F6F6;
 }
 img.tools{
   margin: 5px;
@@ -80,6 +97,7 @@ h2.title{
   color: #494949;
   font-size: 1rem;
 }
+
 #who-we-are, #ourteam, #footer{
   margin-bottom: 10px;
   padding: 10px;
@@ -302,6 +320,18 @@ img.payment{
   margin: 40px 0;
 }
 @media (min-width:768px) {
+  .burger{
+    display:none;
+  }
+  ul.navbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background: transparent;
+    width:55vw;
+    height: auto;
+  }
   #header h1{
     font-size: 2.2rem;
   }
@@ -341,18 +371,9 @@ img.payment{
   }
 }
 @media (min-width:992px){
-.navbar-toggler{
-  display:none;
-}
-ul.navbar{
-  display: flex;
-}
-.navbar-toggler{
-  display:none;
-}
-ul.navbar{
-  display: flex;
-}
+
+
+
   #footer{
     margin: 20px 0;
   }
