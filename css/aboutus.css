@@ -23,12 +23,6 @@ a{
   justify-content: space-between;
   align-items: center;
 }
-/* #logo{
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-} */
-
 #logo img{
   width: 60%;
 }
@@ -39,7 +33,6 @@ a{
   color: #4b4b4b;
   font-size: 0.5rem;
 }
-
 .burger div{
   margin: 5px;
   width: 25px;
@@ -47,19 +40,17 @@ a{
   background-color: #313131;
 }
 ul.navbar{
+  display:none;
   position:absolute;
   padding: 20px;
   top: 50px;
   right: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: 30vh;
   height: 80vh;
   background: #F6F6F6;
 }
 .navbar li{
-  margin-right: 15px;
+  margin-top: 6vh;
   font-family: 'Montserrat:400', sans-serif;
   text-transform: uppercase;
   color: #313131;
@@ -325,6 +316,7 @@ img.payment{
   ul.navbar{
     top: 0;
     right: 0;
+    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0;
@@ -333,6 +325,7 @@ img.payment{
     height: auto;
   }
   .navbar li{
+    margin-top: 0;
     margin-right: 5px;
     font-size: 0.8rem;
   }
@@ -380,7 +373,6 @@ img.payment{
     height: auto;
   }
   .navbar li{
-    margin-right: 5px;
     font-size: 0.6rem;
   }
   #logo img{
