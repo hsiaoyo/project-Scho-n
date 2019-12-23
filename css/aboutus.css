@@ -46,18 +46,10 @@ a{
   height: 3px;
   background-color: #313131;
 }
-#nav li{
-  margin-right: 15px;
-  float: left;
-  font-family: 'Montserrat:400', sans-serif;
-  text-transform: uppercase;
-  color: #313131;
-  font-size: 0.8rem;
-}
 ul.navbar{
   position:absolute;
   padding: 20px;
-  top:45px;
+  top: 50px;
   right: 0px;
   display: flex;
   flex-direction: column;
@@ -65,6 +57,13 @@ ul.navbar{
   width: 30vh;
   height: 80vh;
   background: #F6F6F6;
+}
+.navbar li{
+  margin-right: 15px;
+  font-family: 'Montserrat:400', sans-serif;
+  text-transform: uppercase;
+  color: #313131;
+  font-size: 0.8rem;
 }
 img.tools{
   margin: 5px;
@@ -324,13 +323,18 @@ img.payment{
     display:none;
   }
   ul.navbar{
-    position: relative;
-    display: flex;
+    top: 0;
+    right: 0;
     flex-direction: row;
+    align-items: center;
     padding: 0;
     background: transparent;
-    width:55vw;
+    width:70%;
     height: auto;
+  }
+  .navbar li{
+    margin-right: 5px;
+    font-size: 0.8rem;
   }
   #header h1{
     font-size: 2.2rem;
@@ -371,23 +375,40 @@ img.payment{
   }
 }
 @media (min-width:992px){
-
-
-
+  ul.navbar{
+    width:45vw;
+    height: auto;
+  }
+  .navbar li{
+    margin-right: 5px;
+    font-size: 0.6rem;
+  }
+  #logo img{
+    width: 70%;
+  }
+  #logo a:first-child{
+    display: inline-block;
+  }
+  #logo a:last-child{
+    display: inline;
+  }
+  #who-we-are p{
+    font-size: 1rem;
+  }
+  #who-we-are h3{
+    font-size: 1.4rem;
+  }
   #footer{
     margin: 20px 0;
+  }
+  .company-info img{
+    width: 40%;
   }
  .get-more-info{
    text-align: right;
  }
- #who-we-are p{
-   font-size: 1rem;
- }
- #who-we-are h3{
-   font-size: 1.4rem;
- }
- .company-info img{
-   width: 40%;
+ .rounded-pill{
+   text-align: left;
  }
  .follow h4, .get-more-info h4{
    font-size: 0.8rem;
