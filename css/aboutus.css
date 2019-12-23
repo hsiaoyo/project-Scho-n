@@ -10,6 +10,9 @@ img{
 a{
   color: #494949;
 }
+a:hover{
+  text-decoration: none;
+}
 .display-block {
   display: block !important;
 }
@@ -36,6 +39,9 @@ a{
   color: #4b4b4b;
   font-size: 0.5rem;
 }
+.burger{
+  cursor: pointer;
+}
 .burger div{
   margin: 5px;
   width: 25px;
@@ -43,13 +49,12 @@ a{
   background-color: #313131;
 }
 ul.navbar{
-  /* display:block; */
   display: none;
   position:absolute;
   padding: 20px;
   top: 50px;
   right: 0px;
-  width: 30vh;
+  width: 50%;
   height: 80vh;
   background: #F6F6F6;
 }
@@ -60,9 +65,25 @@ ul.navbar{
   color: #313131;
   font-size: 0.8rem;
 }
+.navbar li:last-child a:last-child{
+  position: relative;
+}
 img.tools{
   margin: 5px;
   width: 20px;
+}
+.items-num{
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  text-align: center;
+  color:white;
+  font-size: 0.5rem;
 }
 #header{
   display: flex;
@@ -91,12 +112,10 @@ h2.title{
   color: #494949;
   font-size: 1rem;
 }
-
 #who-we-are, #ourteam, #footer{
   margin-bottom: 10px;
   padding: 10px;
 }
-
 #who-we-are p{
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -114,12 +133,15 @@ h2.title{
 }
 .follow h4, .get-more-info h4{
   font-family: 'Open Sans:800', sans-serif;
-  font-size: 0.4rem;
+  font-size: 0.8rem;
   color: #494949;
 }
-.follow i, .social-media i{
-  font-size: 0.1rem;
+.social-media i{
+  font-size: 0.8rem;
   padding-right: 2px;
+}
+.social-media i:hover{
+  color: gray;
 }
 .member{
   max-width: 280px;
@@ -143,8 +165,8 @@ h2.title{
 }
 .thumbnail{
   position: relative;
+  cursor: pointer;
 }
-
 .member:last-child{
   padding: 40px;
   width:280px;
@@ -183,7 +205,6 @@ h2.title{
   left: 20%;
   font-size: 1.2rem;
 }
-
 .you h2{
   position:absolute;
   top: 35%;
@@ -192,7 +213,6 @@ h2.title{
   font-size: 1rem;
   color: #ADADAD;
 }
-
 .wrapper1.col-6, .wrapper2.col-6{
   padding: 10px;
 }
@@ -264,7 +284,6 @@ h2.title{
 .learn-more li{
   margin: 7px 0;
 }
-
 .learn-more button, .get-more-info h4, .learn-more.whole h3{
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -274,7 +293,6 @@ h2.title{
 .learn-more button{
   padding: 10px 0;
 }
-
 .learn-more.whole{
   display: none;
   margin: 10px 0;
@@ -309,7 +327,6 @@ img.payment{
   margin: 0.5rem auto;
   width: 50%;
 }
-
 #buttom{
   margin: 40px 0;
 }
@@ -354,7 +371,7 @@ img.payment{
   .follow h4, .get-more-info h4{
     font-size: 0.6rem;
   }
-  .follow i, .social-media i{
+  .social-media i{
     font-size: 0.5rem;
   }
   .learn-more.whole{
