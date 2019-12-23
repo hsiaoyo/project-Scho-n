@@ -90,6 +90,9 @@ button.send{
 button.send:hover{
   background: #b7aeae;
 }
+#map{
+  margin-bottom: 30px;
+}
 #buttom{
   text-align: center;
 }
