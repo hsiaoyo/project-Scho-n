@@ -22,8 +22,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 23vh;
-  background-image: url('../images/img@1X (1).png');
+  /* background-image: url('../images/img@1X (1).png');
   background-size: contain;
   background-repeat: no-repeat;
+  opacity: 0.5019607843137255; */
+}
+#header .container-fluid::after {
+  content: "";
+  background: url('../images/img@1X (1).png');
+  opacity: 0.5019607843137255;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
