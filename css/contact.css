@@ -52,8 +52,29 @@
   color: #343434;
 }
 #contact h3.title{
+  margin: 0;
   font-weight: bold;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #383838;
 }
+.method div{
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+/* .method{
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 100%;
+  grid-template-areas: "address phone email"
+}
+.address{
+  grid-area: address;
+}
+.phone{
+  grid-area: phone;
+}
+.email{
+  grid-area: email;
+} */
