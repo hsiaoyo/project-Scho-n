@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#header{
+  margin: 30px 0;
+  text-align: center;
+  color: #494949;
+}
+#header h1{
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat:700', sans-serif;
+  font-size: 2rem;
+}
+#header h6{
+  font-family: 'Source Sans Pro:300', sans-serif;
+  font-size: 0.8rem;
+}
+#header .container-fluid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 23vh;
+  background-image: url('../images/img@1X (1).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
