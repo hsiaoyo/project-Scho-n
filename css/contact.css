@@ -189,6 +189,9 @@ button.send:hover{
   }
 }
 @media (min-width:992px){
+  input, textarea{
+    width: 70%;
+  }
   .company-info{
     display: flex;
     flex-direction: column;
