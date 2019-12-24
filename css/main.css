@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,800|Source+Sans+Pro:300,400&display=swap');
 ul{
   list-style-type: none;
   margin: 0;
@@ -12,8 +13,21 @@ a{
 a:hover{
   text-decoration: none;
 }
+.container-fluid{
+  padding: 0;
+}
 .display-block {
   display: block !important;
+}
+button.send{
+  display: block;
+  background: #383838;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-size: .8rem;
+}
+button.send:hover{
+  background: #b7aeae;
 }
 #nav{
   padding:30px;
@@ -53,6 +67,7 @@ ul.navbar{
   width: 50%;
   height: 80vh;
   background: #F6F6F6;
+  z-index: 10;
 }
 .navbar li{
   margin-top: 6vh;
