@@ -1,0 +1,29 @@
+#top{
+  padding: 10px;
+  background: #282828;
+}
+#top a{
+  color: #A1A1A1;
+  font-size: 0.5rem;
+  background: transparent;
+}
+#top a:hover{
+  background: #3F3E43;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+}
+.contact a{
+  padding-bottom: 5px;
+  width: 48%;
+}
+.customer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+}
+.customer a{
+  padding: 6px;
+}
