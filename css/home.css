@@ -56,3 +56,47 @@
 .shop-bag div h4{
   font-weight: bold;
 }
+.product{
+  position:relative;
+  padding: 10px;
+}
+.product.first{
+  display:flex;
+  align-items: flex-end;
+  height: 60vh;
+  background: #4C4C4C;
+  color: #FFFFFF;
+}
+.product.first img{
+  align-self: flex-start;
+  position: absolute;
+  right: 20px;
+  width: 60%;
+
+}
+.intro_1{
+  width: 75%;
+}
+.intro_1 h4, .second h4{
+  letter-spacing: 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .7rem;
+}
+.intro_1 h1.title{
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.intro_1 h1.subtitle{
+  margin-bottom: 0;
+  font-weight: lighter;
+  font-family: 'Montserrat300', sans-serif;
+}
+.intro_1 p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.7rem;
+}
+h2.price{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
