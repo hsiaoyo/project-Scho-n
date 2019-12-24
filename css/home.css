@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #top{
   padding: 10px;
   background: #282828;
@@ -26,4 +31,28 @@
 }
 .customer a{
   padding: 6px;
+}
+#nav{
+  padding: 10px;
+}
+#logo img{
+  width: 30%;
+}
+.user-tool{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+.shop-bag{
+  display:flex;
+}
+.shop-bag div h4,.shop-bag div h6{
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7rem;
+  color: #000;
+}
+.shop-bag div h4{
+  font-weight: bold;
 }
