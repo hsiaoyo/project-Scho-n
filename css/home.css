@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+i.icon-star, i.icon-star-empty{
+  font-size: 10px;
+  color: #C8A760;
+}
 #top{
   padding: 10px;
   background: #282828;
@@ -103,7 +107,17 @@
 }
 h2.price{
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+h2.price.red{
+  position: absolute;
+  bottom: 30%;
+  right: 10%;
+  text-align: right;
+  color: #991015;
+}
+h2.price.dark{
+  color: #2C3E65;
 }
 .second h3{
   font-family: 'Montserrat', sans-serif;
@@ -120,10 +134,10 @@ h2.price{
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 60%;
+  bottom: 11%;
   right: 10%;
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   background: #62C5DE;
 }
@@ -140,13 +154,59 @@ h2.price{
 h2.price span{
   font-size: .7rem;
 }
+h2.price.red span{
+  font-size: 1.2rem;
+}
 .shop{
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   color:#FFFFFF;
   font-size: 14px;
 }
-.intro_3 h3{
+.shop.dark{
+  padding: 0;
+  color: #2D4169;
+}
+.intro_3 h3, .third h3{
+  margin-bottom: 0;
+  letter-spacing: 2px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color: #939393;
+  font-size: 1rem;
+}
+.shop-black{
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  border-radius: 0;
+  border: 0;
+  padding: 4px 8px;
+  background: #2E2D32;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  color: #FFFFFF;
+}
+.intro_3{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  text-align: right;
+}
+.third.dark h3{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #2C3E66;
+}
+.intro_4{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+.intro_4 h5{
+  text-decoration: line-through;
+  font-family: 'Montserrat', sans-serif;
+  color: #9F9F9F;
 }
