@@ -58,21 +58,26 @@
 }
 .product{
   position:relative;
+  margin-bottom: 10px;
   padding: 10px;
 }
-.product.first{
+.product.first, .product.second{
   display:flex;
   align-items: flex-end;
   height: 60vh;
   background: #4C4C4C;
   color: #FFFFFF;
 }
+.product.second{
+  flex-direction: column;
+  align-items: flex-start;
+  height:45vh;
+}
 .product.first img{
   align-self: flex-start;
   position: absolute;
   right: 20px;
   width: 60%;
-
 }
 .intro_1{
   width: 75%;
@@ -99,4 +104,49 @@
 h2.price{
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+}
+.second h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.product.second img{
+  align-self: center;
+  width: 80%;
+}
+.price-sticker{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #62C5DE;
+}
+.price-sticker h6{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  text-decoration: line-through;
+  opacity: 0.5686274509803921;
+}
+.price-sticker h6 span{
+  font-size: .4rem;
+}
+h2.price span{
+  font-size: .7rem;
+}
+.shop{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color:#FFFFFF;
+  font-size: 14px;
+}
+.intro_3 h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #939393;
 }
