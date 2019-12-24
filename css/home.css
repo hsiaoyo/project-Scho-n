@@ -63,7 +63,7 @@ i.icon-star, i.icon-star-empty{
 .product{
   position:relative;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 .product.first, .product.second{
   display:flex;
@@ -86,10 +86,13 @@ i.icon-star, i.icon-star-empty{
 .intro_1{
   width: 75%;
 }
-.intro_1 h4, .second h4{
+.intro_1 h4, .second h4, .fourth h4{
   letter-spacing: 2px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: .7rem;
+}
+.fourth h4{
+  font-size: 1.2rem;
 }
 .intro_1 h1.title{
   margin-bottom: 0;
@@ -158,14 +161,21 @@ h2.price.red span{
   font-size: 1.2rem;
 }
 .shop{
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   color:#FFFFFF;
-  font-size: 14px;
+  font-size: 1rem;
 }
 .shop.dark{
-  padding: 0;
   color: #2D4169;
+}
+.shop.gray{
+  color: #979797;
+}
+.fourth .shop{
+  position: absolute;
+  bottom: 10%;
 }
 .intro_3 h3, .third h3{
   margin-bottom: 0;
@@ -209,4 +219,31 @@ h2.price.red span{
   text-decoration: line-through;
   font-family: 'Montserrat', sans-serif;
   color: #9F9F9F;
+}
+.product.fourth{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 55vh;
+  background-image: url('../images/414x334.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #B7B7B7;
+}
+.product.fourth.green{
+  width: 100%;
+  height: 45vh;
+  background-image: url('../images/414x223.png');
+  color: #fff;
+}
+.fourth h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #535353;
+}
+.fourth.green h2{
+  color: #fff;
 }
