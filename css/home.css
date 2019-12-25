@@ -263,3 +263,73 @@ h2.price.red span{
 .intro_5 h4{
   margin: 0;
 }
+.switch{
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.switch li a{
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #838182;
+  transition: all .3s linear;
+}
+.switch li a:after{
+  content:"|";
+  margin: 0 5px;
+}
+.switch li:last-child a:after{
+  content:"";
+}
+.control{
+  display:none;
+  position: relative;
+  width: 72px;
+  height: 38px;
+  background: #eee;
+}
+.controller{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top:10%;
+  background: #ffffff;
+  text-align: center;
+}
+.controller.left{
+  left:5%;
+}
+.controller.right{
+  right:5%
+}
+.feature{
+  position: relative;
+}
+.featured h4{
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #747474;
+}
+.featured h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #010101;
+}
+.featured h3 i{
+  font-size: 1rem;
+}
+.discount-sticker{
+  position: absolute;
+  top: 5%;
+  padding: 0.3rem;
+  margin: 0;
+  background: #B2CC29;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
