@@ -323,7 +323,7 @@ h2.price.red span{
   font-size: 1.2rem;
   color: #010101;
 }
-.featured h3 i{
+.featured h3 i, .best h3 i{
   font-size: 1rem;
 }
 .discount-sticker{
@@ -336,6 +336,9 @@ h2.price.red span{
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
+}
+#flagship-product .container:last-child{
+  margin: 20px 0
 }
 .other{
   position: relative;
@@ -365,4 +368,37 @@ h2.price.red span{
   right: 5%;
   bottom: 10%;
   width: 50%;
+}
+#best-seller h1, #brands h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #3A3A3A;
+}
+.best{
+  position: relative;
+}
+.best h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #747474;
+}
+.best h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+  color: #010101;
+}
+.new-sticker{
+  position: absolute;
+  box-sizing: border-box;
+  left: 5px;
+  top: 5%;
+  padding: 2px;
+  margin: 0;
+  background: #000000;
+  text-align: center;
+  font-size: 0.3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
 }
