@@ -421,6 +421,10 @@ h2.price.red span{
   font-size: 1.5rem;
   color: #838182;
 }
+.gray-background{
+  padding: 20px 0;
+  background: #F6F6F6;
+}
 .support h2{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -437,4 +441,31 @@ h2.price.red span{
   line-height: 1.8;
   font-family: 'Open Sans', sans-serif;
   color:#868686;
+}
+.subscribe{
+  display: flex;
+  margin: 20px 0;
+}
+.subscribe input{
+  padding: 10px;
+  height: 43px;
+  border:solid #fff;
+  border-top-left-radius: 50em;
+  border-bottom-left-radius: 50em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  color: #696969;
+}
+.subscribe button{
+  height: 43px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 50em;
+  border-bottom-right-radius: 50em;
+  background: #696969;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  color: #fff;
 }
