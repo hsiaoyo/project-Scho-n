@@ -63,14 +63,26 @@ i.icon-star, i.icon-star-empty{
 .product{
   position:relative;
   margin-bottom: 10px;
-  padding: 20px;
 }
 .product.first, .product.second{
   display:flex;
   align-items: flex-end;
+  padding: 20px;
   height: 60vh;
   background: #4C4C4C;
   color: #FFFFFF;
+}
+.product.first.white{
+  align-items: flex-start;
+  height: 70vh;
+  background: #F8F8F8;
+  color: #535353;
+}
+.product.first.white img{
+  align-self: flex-end;
+}
+.product.first.white .intro_1 h1{
+  font-size: 1.8rem;
 }
 .product.second{
   flex-direction: column;
@@ -176,6 +188,7 @@ h2.price.red span{
 .fourth .shop{
   position: absolute;
   bottom: 10%;
+  right:10%;
 }
 .intro_3 h3, .third h3{
   margin-bottom: 0;
@@ -216,8 +229,10 @@ h2.price.red span{
   left: 10%;
 }
 .intro_4 h5{
+  margin: 0;
   text-decoration: line-through;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   color: #9F9F9F;
 }
 .product.fourth{
@@ -225,17 +240,9 @@ h2.price.red span{
   flex-direction: column;
   align-items: flex-end;
   width: 100%;
-  height: 55vh;
-  background-image: url('../images/414x334.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   color: #B7B7B7;
 }
 .product.fourth.green{
-  width: 100%;
-  height: 45vh;
-  background-image: url('../images/414x223.png');
   color: #fff;
 }
 .fourth h2{
@@ -246,4 +253,13 @@ h2.price.red span{
 }
 .fourth.green h2{
   color: #fff;
+}
+.intro_5{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  text-align: right;
+}
+.intro_5 h4{
+  margin: 0;
 }
