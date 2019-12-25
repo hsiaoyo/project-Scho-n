@@ -338,7 +338,7 @@ h2.price.red span{
   color: #ffffff;
 }
 #flagship-product .container:last-child{
-  margin: 20px 0
+  margin: 30px auto;
 }
 .other{
   position: relative;
