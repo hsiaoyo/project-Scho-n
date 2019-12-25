@@ -185,6 +185,10 @@ h2.price.red span{
 .shop.gray{
   color: #979797;
 }
+.other .shop{
+  position: absolute;
+  bottom: 15%;
+}
 .fourth .shop{
   position: absolute;
   bottom: 10%;
@@ -332,4 +336,33 @@ h2.price.red span{
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
+}
+.other{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: 40vh;
+  background: #F8F8F8
+}
+.other.dark{
+  background: #F1F1F1;
+}
+.other h4{
+  letter-spacing: 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .8rem;
+  color: #B7B7B7;
+}
+.other h3{
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #535353;
+}
+.other img{
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 50%;
 }
