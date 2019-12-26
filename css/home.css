@@ -49,6 +49,7 @@ i.icon-star, i.icon-star-empty{
 }
 .shop-bag{
   display:flex;
+  align-items: center;
 }
 .shop-bag div h4,.shop-bag div h6{
   margin-bottom: 0;
@@ -522,22 +523,26 @@ hr{
   .customer a{
     padding: 10px;
   }
+  #nav ul.navbar{
+    position: relative;
+    top: 8px;
+    float: left;
+  }
+  #logo{
+    margin: 10px 0;
+  }
+  #logo img{
+    width: 15%;
+  }
+  .user-tool{
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+    float: right;
   }
 }
 @media (min-width:992) {
-  .burger{
-    display:none;
-  }
-  #nav ul.navbar{
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    position: static;
-    padding: 0;
-    background: transparent;
-    width:55%;;
-    height: auto;
-  }
+
   /* .burger{
     display:none;
   }
@@ -568,8 +573,5 @@ hr{
     align-items: center;
     justify-content: flex-start;
 } */
-  }
-  .user-tool a{
-    margin: 10px;
   }
 }
