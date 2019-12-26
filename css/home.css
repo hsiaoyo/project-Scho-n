@@ -490,3 +490,15 @@ hr{
   font-size: .8rem;
   color: #fff;
 }
+@media (min-width:576px) {
+  .wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .product.third{
+    border-right: 3px solid white;
+  }
+  .product.third.dark{
+    border-rleft: 3px solid white;
+  }
+}
