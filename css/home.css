@@ -170,9 +170,6 @@ h2.price.dark{
 h2.price span{
   font-size: .7rem;
 }
-h2.price.red span{
-  font-size: 1.2rem;
-}
 .shop{
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -492,7 +489,7 @@ hr{
   color: #fff;
 }
 @media (min-width:576px) {
-  .wrapper{
+  .the-third{
     display: flex;
     flex-direction: row-reverse;
   }
@@ -539,6 +536,84 @@ hr{
     justify-content: flex-start;
     align-items: center;
     float: right;
+  }
+  .product.first, .product.second{
+    padding: 40px;
+    height: 75vh;
+  }
+  .product.first.white{
+    height: 80vh;
+  }
+  .intro_1 h4, .second h4{
+    font-size:1rem;
+  }
+  .fourth h4{
+    font-size: 1.7rem;
+  }
+  .intro_1 h1{
+    font-size: 3.5rem;
+  }
+  .intro_1 p{
+    font-size: 1rem;
+  }
+  .product.first.white .intro_1 h1{
+    font-size: 2.9rem;
+  }
+  /* wrapper */
+  .the-third{
+    display: block;
+  }
+  .product.second{
+    height: 95%;
+  }
+  .product.second img{
+    position: absolute;
+    top: 30%;
+  }
+  .product.second .shop{
+    position: absolute;
+    bottom: 15%;
+  }
+  .wrapper{
+    display:grid;
+    grid-template-columns: 51% 49%;
+    grid-template-rows: 51% 49%;
+    grid-gap: 10px;
+    grid-template-areas:
+    "box1 box2"
+    "box1 box3";
+  }
+  .second{
+    grid-area: box1;
+  }
+  .third{
+    grid-area: box2;
+  }
+  .third.dark{
+    grid-area: box3;
+  }
+  h2.price{
+    font-size: 2rem;
+  }
+  h2.price.red{
+    bottom: 20%;
+  }
+  .second h3{
+    font-size: 2rem;
+  }
+  .price-sticker{
+    bottom: 25%;
+    height: 130px;
+    width: 130px;
+  }
+  .price-sticker h6{
+    font-size: 1.2rem;
+  }
+  .price-sticker h6 span{
+    font-size: .7rem;
+  }
+  h2.price span{
+    font-size: 1.5rem;
   }
 }
 @media (min-width:992) {
