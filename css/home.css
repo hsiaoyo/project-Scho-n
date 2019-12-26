@@ -499,6 +499,8 @@ hr{
   .product.third.dark{
     border-left: 3px solid white;
   }
+  .intro_5 h4 {
+    margin-bottom: 0.5rem;
 }
 @media (min-width:768px){
   #top .container{
@@ -614,6 +616,9 @@ hr{
   }
   h2.price span{
     font-size: 1.5rem;
+  }
+  .shop-black{
+    bottom: 10%
   }
 }
 @media (min-width:992) {
