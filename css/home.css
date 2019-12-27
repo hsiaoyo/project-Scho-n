@@ -46,6 +46,7 @@ i.icon-star, i.icon-star-empty{
   display: flex;
   justify-content: space-evenly;
   margin: 20px 0;
+  width: 100%;
 }
 .shop-bag{
   display:flex;
@@ -273,9 +274,13 @@ h2.price span{
 }
 .switch li a{
   text-transform: uppercase;
+  font-weight: bold;
   font-size: 0.8rem;
   color: #838182;
   transition: all .3s linear;
+}
+.switch li a.active{
+  color: #3a3a3a;
 }
 .switch li a:after{
   content:"|";
@@ -523,9 +528,7 @@ hr{
     padding: 10px;
   }
   #nav ul.navbar{
-    position: relative;
-    top: 8px;
-    float: left;
+    position: static;
   }
   #logo{
     margin: 10px 0;
@@ -533,11 +536,12 @@ hr{
   #logo img{
     width: 15%;
   }
+  .nav{
+    justify-content: space-between;
+  }
   .user-tool{
     margin: 0;
-    justify-content: flex-start;
-    align-items: center;
-    float: right;
+    width: auto;
   }
   .product.first, .product.second{
     padding: 40px;
@@ -545,6 +549,9 @@ hr{
   }
   .product.first.white{
     height: 80vh;
+  }
+  .intro_1{
+    z-index: 99;
   }
   .intro_1 h4, .second h4{
     font-size:1rem;
