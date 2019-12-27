@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 i.icon-star, i.icon-star-empty{
   font-size: 10px;
   color: #C8A760;
@@ -100,6 +101,7 @@ i.icon-star, i.icon-star-empty{
 }
 .intro_1{
   width: 75%;
+  z-index: 99;
 }
 .intro_1 h4, .second h4, .fourth h4{
   letter-spacing: 2px;
@@ -175,6 +177,10 @@ h2.price span{
   color:#FFFFFF;
   font-size: 1rem;
 }
+.product.second .shop{
+  position: absolute;
+  bottom: 10%;
+}
 .shop.dark{
   color: #2D4169;
 }
@@ -224,9 +230,13 @@ h2.price span{
   position: absolute;
   bottom: 10%;
   right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.dark .intro_4{
+ .intro_4_1{
   position: absolute;
+  bottom: 10%;
   left: 10%;
 }
 .intro_4 h5{
@@ -506,9 +516,6 @@ hr{
   .product.third.dark img{
     height: 233.73px;
   }
-  .intro_4{
-    bottom: 3%;
-  }
   .intro_5 h4 {
     margin-bottom: 0.5rem;
 }
@@ -555,9 +562,6 @@ hr{
   .product.first.white{
     height: 80vh;
   }
-  .intro_1{
-    z-index: 99;
-  }
   .intro_1 h4, .second h4{
     font-size:1rem;
   }
@@ -586,7 +590,7 @@ hr{
   .the-third{
     flex-direction: column;
     align-items: flex-end;
-    width: 64%;
+    width: 60%;
   }
   .product.third.dark{
     margin-bottom: 0;
@@ -661,5 +665,38 @@ hr{
   }
   .best-sell-products.row{
     justify-content: space-evenly;
+  }
+  .support{
+    display: flex;
+    align-items: center
+  }
+  .support i{
+    font-size: 2.5rem;
+    padding-right: 8px;
+  }
+  #customer-support .support{
+    width: auto;
+  }
+}
+@media (min-width:1024px) {
+  .wrapper1{
+    display: flex;
+  }
+  .product.first:first-child{
+    margin-right: 10px;
+    height: auto;
+  }
+  .wrapper2{
+    justify-content: space-between;
+  }
+  .product.second{
+    width: 45%;
+    padding: 20px;
+  }
+  .product.second h3{
+    font-size: 1.5rem;
+  }
+  .the-third{
+    width: 54%;
   }
 }
