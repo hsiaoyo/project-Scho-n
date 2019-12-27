@@ -642,6 +642,25 @@ hr{
   .user-tool a:first-child{
     margin-right: 10px;
   }
+  .wrapper2{
+    display: grid;
+    grid-template-columns: 34.789% 64.369%;
+    grid-template-rows: 39.26% 58.502%;
+    grid-template-areas:
+    "box1 box3"
+    "box2 box3";
+  }
+  .product.fourth{
+    grid-area: box2;
+  }
+  .product.fourth.green{
+    grid-area: box1;
+  }
+  .product.first.white{
+    grid-area: box3;
+  }
+
+
   #flagship-product .container:last-child{
     display: flex;
   }
