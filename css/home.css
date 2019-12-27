@@ -575,37 +575,27 @@ hr{
   }
 
   /* wrapper */
-  .the-third{
-    display: block;
+  .wrapper{
+    display: flex;
+    margin-bottom: 10px;
   }
   .product.second{
-    height: 97%;
+    margin: 0;
+    height: auto;
   }
-  .product.second img{
-    position: absolute;
-    top: 30%;
+  .the-third{
+    flex-direction: column;
+    align-items: flex-end;
+    width: 64%;
   }
-  .product.second .shop{
-    position: absolute;
-    bottom: 15%;
+  .product.third.dark{
+    margin-bottom: 0;
   }
-  .wrapper{
-    display:grid;
-    grid-template-columns: 51% 49%;
-    grid-template-rows: 51% 49%;
-    grid-gap: 5px;
-    grid-template-areas:
-    "box1 box2"
-    "box1 box3";
+  .product.third, .product.third.dark{
+    width: 97%;
   }
-  .second{
-    grid-area: box1;
-  }
-  .third{
-    grid-area: box2;
-  }
-  .third.dark{
-    grid-area: box3;
+  .product.third.dark img{
+    height: auto;
   }
   h2.price{
     font-size: 2rem;
