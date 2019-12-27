@@ -32,51 +32,54 @@
       <div id="logo">
         <a href="#"><img src="images/logo.png" alt="logo"></a>
       </div>
-      <ul class="navbar">
-        <li>
-          <a href="#">HOME</a>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            PRODUCTS
+      <div class="nav">
+        <ul class="navbar">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PRODUCTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"></a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PAGES
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"></a>
+            </div>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">BLOG</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+        <div class="user-tool">
+          <a href="#"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
+          <a href="#" class="shop-bag">
+            <img class="tools" src="images/handbag@1X-2.png" alt="cart">
+            <div>
+              <h4>SHOPPING CART</h4>
+              <h6><span class="item-num">3</span> items $<span class="total">74.00</span></h6>
+            </div>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#"></a>
+          <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            PAGES
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#"></a>
-          </div>
-        </li>
-        <li>
-          <a href="#">ABOUT</a>
-        </li>
-        <li>
-          <a href="#">BLOG</a>
-        </li>
-        <li>
-          <a href="#">CONTACT</a>
-        </li>
-      </ul>
-      <div class="user-tool">
-        <a href="#"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
-        <a href="#" class="shop-bag">
-          <img class="tools" src="images/handbag@1X-2.png" alt="cart">
-          <div>
-            <h4>SHOPPING CART</h4>
-            <h6><span class="item-num">3</span> items $<span class="total">74.00</span></h6>
-          </div>
-        </a>
-        <div class="burger">
-          <div></div>
-          <div></div>
-          <div></div>
         </div>
       </div>
+
     </div>
   </div>
   <div id="products">
@@ -155,7 +158,7 @@
     <div class="container">
       <div class="switch">
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="#">featured</a></li>
+          <li class="list-inline-item"><a class="active" href="#">featured</a></li>
           <li class="list-inline-item"><a href="#">latest</a></li>
           <li class="list-inline-item"><a href="#">best seller</a></li>
         </ul>
