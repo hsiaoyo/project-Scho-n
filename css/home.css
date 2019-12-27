@@ -128,10 +128,6 @@ h2.price{
   font-size: 1.5rem;
 }
 h2.price.red{
-  position: absolute;
-  bottom: 30%;
-  right: 10%;
-  text-align: right;
   color: #991015;
 }
 h2.price.dark{
@@ -203,9 +199,6 @@ h2.price span{
   font-size: 1rem;
 }
 .shop-black{
-  position: absolute;
-  right: 10%;
-  bottom: 20%;
   border-radius: 0;
   border: 0;
   padding: 4px 8px;
@@ -230,6 +223,10 @@ h2.price span{
 .intro_4{
   position: absolute;
   bottom: 10%;
+  right: 10%;
+}
+.dark .intro_4{
+  position: absolute;
   left: 10%;
 }
 .intro_4 h5{
@@ -498,12 +495,19 @@ hr{
   .the-third{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
   .product.third{
-    border-right: 3px solid white;
+    width: 49%;
   }
   .product.third.dark{
-    border-left: 3px solid white;
+    width: 49%;
+  }
+  .product.third.dark img{
+    height: 233.73px;
+  }
+  .intro_4{
+    bottom: 3%;
   }
   .intro_5 h4 {
     margin-bottom: 0.5rem;
@@ -569,12 +573,13 @@ hr{
   .product.first.white .intro_1 h1{
     font-size: 2.9rem;
   }
+
   /* wrapper */
   .the-third{
     display: block;
   }
   .product.second{
-    height: 95%;
+    height: 97%;
   }
   .product.second img{
     position: absolute;
@@ -588,7 +593,7 @@ hr{
     display:grid;
     grid-template-columns: 51% 49%;
     grid-template-rows: 51% 49%;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-areas:
     "box1 box2"
     "box1 box3";
@@ -604,9 +609,6 @@ hr{
   }
   h2.price{
     font-size: 2rem;
-  }
-  h2.price.red{
-    bottom: 20%;
   }
   .second h3{
     font-size: 2rem;
@@ -649,5 +651,11 @@ hr{
   }
   .user-tool a:first-child{
     margin-right: 10px;
+  }
+  #flagship-product .container:last-child{
+    display: flex;
+  }
+  .best-sell-products.row{
+    justify-content: space-evenly;
   }
 }
