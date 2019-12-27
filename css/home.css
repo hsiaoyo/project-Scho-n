@@ -239,7 +239,7 @@ h2.price span{
   bottom: 10%;
   left: 10%;
 }
-.intro_4 h5{
+.intro_4_1 h5{
   margin: 0;
   text-decoration: line-through;
   font-family: 'Montserrat', sans-serif;
@@ -398,9 +398,6 @@ h2.price span{
   font-family: 'Source Sans Pro', sans-serif;
   color: #A0A0A0;
 }
-.best{
-  position: relative;
-}
 .best h4{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
@@ -411,9 +408,16 @@ h2.price span{
   font-size: 1.2rem;
   color: #010101;
 }
+.best-seller-image{
+  position: relative;
+}
+.star{
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
 .new-sticker{
   position: absolute;
-  left: 15px;
   top: 10%;
   padding:0 5px;
   margin: 0;
@@ -436,6 +440,11 @@ h2.price span{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.featured:nth-child(2) h4:before, .featured:last-child h4:before{
+  content:"";
+  display: block;
+  height: 23px;
 }
 #brands{
   margin: 30px 0;
@@ -646,6 +655,10 @@ hr{
   .user-tool a:first-child{
     margin-right: 10px;
   }
+  .product.third .price{
+    margin: 0;
+    font-size: 1.5rem;
+  }
  .wrapper3{
    display: flex;
    justify-content: space-between;
@@ -677,8 +690,6 @@ hr{
   #customer-support .support{
     width: auto;
   }
-}
-@media (min-width:1024px) {
   .wrapper1{
     display: flex;
   }
