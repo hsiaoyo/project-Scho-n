@@ -8,7 +8,19 @@ i.icon-star, i.icon-star-empty{
   font-size: 10px;
   color: #C8A760;
 }
-
+.cover{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 0;
+  transition:all .4s linear;
+}
+.cover:hover{
+  opacity: 1;
+}
 .add, .browse{
   display: flex;
   justify-content: space-around;
@@ -28,6 +40,7 @@ i.icon-star, i.icon-star-empty{
   left: 10%;
   width: 80%;
 }
+
 .add img {
   display: none;
   width: 18%
@@ -35,9 +48,7 @@ i.icon-star, i.icon-star-empty{
 .add i{
   font-size: 1rem;
 }
-.browse img{
 
-}
 .browse div:after{
   content:"|";
   margin: 0 3px;
@@ -452,7 +463,7 @@ h2.price span{
   font-size: 1.2rem;
   color: #010101;
 }
-.best-seller-image{
+.thumbnail{
   position: relative;
 }
 .star{
