@@ -8,6 +8,43 @@ i.icon-star, i.icon-star-empty{
   font-size: 10px;
   color: #C8A760;
 }
+
+.add, .browse{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  border: 1px solid #e4e2e2;
+  background: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #8A8A8A;
+}
+.browse{
+  bottom: 7%;
+  left: 10%;
+  width: 80%;
+}
+.add img {
+  display: none;
+  width: 18%
+}
+.add i{
+  font-size: 1rem;
+}
+.browse img{
+
+}
+.browse div:after{
+  content:"|";
+  margin: 0 3px;
+}
+.browse div:last-child:after{
+  content:"";
+}
 #top{
   padding: 10px;
   background: #282828;
@@ -39,9 +76,16 @@ i.icon-star, i.icon-star-empty{
 }
 #nav{
   padding: 10px;
+  position: relative;
 }
 #logo img{
   width: 30%;
+}
+ul.navbar{
+  top: 80%;
+  height: 66vh;
+  z-index: 100;
+  width: 100%;
 }
 .user-tool{
   display: flex;
@@ -527,7 +571,12 @@ hr{
   }
   .intro_5 h4 {
     margin-bottom: 0.5rem;
+  }
+  .control{
+    display: block;
+  }
 }
+
 @media (min-width:768px){
   #top .container{
     display: flex;
