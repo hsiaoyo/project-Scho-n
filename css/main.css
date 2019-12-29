@@ -39,6 +39,9 @@ button.send:hover{
   justify-content: space-between;
   align-items: center;
 }
+.navbar a:hover{
+  color: #bbbbbb;
+}
 #logo img{
   width: 60%;
 }
@@ -75,6 +78,9 @@ ul.navbar{
   text-transform: uppercase;
   color: #313131;
   font-size: 0.8rem;
+}
+.navbar a:hover{
+  color: #bbb;
 }
 .navbar li:last-child a:last-child{
   position: relative;
