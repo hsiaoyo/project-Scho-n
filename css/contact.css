@@ -23,6 +23,10 @@
 }
 .breadcrumbs{
   display: flex;
+  align-items: center;
+}
+.breadcrumbs h6{
+  margin: 0;
 }
 #header .container-fluid{
   display: flex;
