@@ -27,6 +27,10 @@ a:hover{
 }
 .breadcrumbs{
   display: flex;
+  align-items: center;
+}
+.breadcrumbs h6{
+  margin: 0;
 }
 #nav{
   padding:30px;
@@ -76,6 +80,9 @@ ul.navbar{
 }
 .navbar li:last-child a:last-child{
   position: relative;
+}
+.navbar a:hover{
+  color: #bbbbbb;
 }
 img.tools{
   margin: 5px;
