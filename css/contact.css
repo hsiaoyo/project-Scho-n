@@ -14,9 +14,15 @@
   font-weight: bold;
   font-size: 2rem;
 }
-#header h6{
+#header a, #header h6{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.8rem;
+}
+#header a:hover{
+  color: #909090;
+}
+.breadcrumbs{
+  display: flex;
 }
 #header .container-fluid{
   display: flex;
