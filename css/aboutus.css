@@ -19,6 +19,15 @@ a:hover{
 .container-fluid{
   padding: 0;
 }
+#header{
+  background: #F4F4F4;
+}
+#header a:hover{
+  color: #909090;
+}
+.breadcrumbs{
+  display: flex;
+}
 #nav{
   padding:30px;
   margin: 10px 0;
@@ -150,6 +159,9 @@ h2.title{
 .member{
   max-width: 280px;
   margin: 0 auto;
+}
+.member.you{
+  background: #f4f4f4;
 }
 #ourteam h3{
   margin:10px 0 0;
