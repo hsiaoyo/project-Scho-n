@@ -63,6 +63,15 @@ img{
   font-size: 1.6rem;
   color: #494949;
 }
+.post-info{
+  display: flex;
+  justify-content: space-between
+}
+.post-info div{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .8rem;
+  color: #919191;
+}
 
 
 @media (min-width:768px) {
