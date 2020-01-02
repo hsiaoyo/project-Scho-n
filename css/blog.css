@@ -10,6 +10,7 @@ a:hover{
   color: #bbbbbb;;
   transition: all .3s linear;
 }
+
 #header{
   margin: 30px 0;
   background: #F4F4F4;
@@ -242,6 +243,9 @@ a:hover{
   .sidebar .tags hr {
      width: 10%;
  }
+ .sidebar .tag{
+   width: 92%;
+ }
 }
 
 @media (min-width:992px){
@@ -250,5 +254,8 @@ a:hover{
   }
   .sidebar .popular-post .row img{
     padding: 0;
+  }
+  .sidebar .tag{
+    width: 63%;
   }
  }
