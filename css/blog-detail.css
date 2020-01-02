@@ -11,10 +11,16 @@ a:hover{
   transition: all .3s linear;
 }
 #header{
-  margin: 30px 0;
+  margin: 30px 0 0;
   background: #F4F4F4;
   text-align: center;
   color: #494949;
+}
+#header .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23vh;
 }
 #header h1{
   letter-spacing: 0.1rem;
@@ -23,32 +29,33 @@ a:hover{
   font-weight: bold;
   font-size: 1.4rem;
 }
-#header a, #header h6{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 0.8rem;
+#header-tools{
+  background: #EEEEEE;
 }
-#header a.search{
-  align-self: flex-start;
-  color: #ccc8c8;
-}
-#header a:hover{
-  color: #909090;
+#header-tools .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
 }
 .breadcrumbs{
   display: flex;
   align-items: center;
 }
-.breadcrumbs h6{
+.breadcrumbs a, .breadcrumbs h6, .display-mode i, .search h6{
   margin: 0;
+  font-size: .7rem;
+  opacity: 0.7098039215686275;
+  color: #000;
 }
-#header .container{
+.search{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 23vh;
 }
+.search h6:first-child{
+  padding-right: 1rem;
+}
+
+
 /* content */
 .post{
   margin-bottom: 2rem;
