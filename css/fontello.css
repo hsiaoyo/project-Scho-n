@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?97590228');
-  src: url('../font/fontello.eot?97590228#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?97590228') format('woff2'),
-       url('../font/fontello.woff?97590228') format('woff'),
-       url('../font/fontello.ttf?97590228') format('truetype'),
-       url('../font/fontello.svg?97590228#fontello') format('svg');
+  src: url('../font/fontello.eot?44362855');
+  src: url('../font/fontello.eot?44362855#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?44362855') format('woff2'),
+       url('../font/fontello.woff?44362855') format('woff'),
+       url('../font/fontello.ttf?44362855') format('truetype'),
+       url('../font/fontello.svg?44362855#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?97590228#fontello') format('svg');
+    src: url('../font/fontello.svg?44362855#fontello') format('svg');
   }
 }
 */
@@ -67,8 +67,11 @@
 .icon-clock:before { content: '\e809'; } /* '' */
 .icon-list:before { content: '\e80a'; } /* '' */
 .icon-comment:before { content: '\e80b'; } /* '' */
+.icon-th:before { content: '\e80c'; } /* '' */
+.icon-chat:before { content: '\e80d'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-gplus:before { content: '\f0d5'; } /* '' */
 .icon-money:before { content: '\f0d6'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
@@ -78,7 +81,9 @@
 .icon-euro:before { content: '\f153'; } /* '' */
 .icon-youtube:before { content: '\f167'; } /* '' */
 .icon-dropbox:before { content: '\f16b'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-lifebuoy:before { content: '\f1cd'; } /* '' */
+.icon-share:before { content: '\f1e0'; } /* '' */
 .icon-cc-visa:before { content: '\f1f0'; } /* '' */
 .icon-cc-mastercard:before { content: '\f1f1'; } /* '' */
 .icon-cc-amex:before { content: '\f1f3'; } /* '' */
