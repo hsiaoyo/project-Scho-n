@@ -79,7 +79,10 @@ ul.navbar{
   color: #313131;
   font-size: 0.8rem;
 }
-.navbar li:last-child a:last-child{
+.navbar li:last-child{
+  display: flex;
+}
+.navbar li:last-child a:nth-child(3){
   position: relative;
 }
 img.tools{
@@ -89,7 +92,7 @@ img.tools{
 .items-num{
   display: inline-block;
   position: absolute;
-  bottom: -10px;
+  bottom: -1px;
   right: 0px;
   width: 15px;
   height: 15px;
@@ -98,6 +101,26 @@ img.tools{
   text-align: center;
   color:white;
   font-size: 0.5rem;
+}
+.design{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 5px;
+  height: 22px;
+  width: 22px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+.design div{
+  margin: 1px 4px;
+  width: 10px;
+  height: 2px;
+  background-color: #313131;
+}
+.design div:nth-child(2){
+  width: 7px;
 }
 .company-info{
   margin: 10px 0;
