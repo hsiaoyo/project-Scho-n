@@ -88,6 +88,24 @@ img{
   font-size: .8rem;
   color: #919191;
 }
+.other-pages{
+  display: flex;
+  justify-content: space-between;
+}
+.other-pages a{
+  padding-left: 5px;
+  border: 2px solid;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+  font-size: .7rem;
+  color: #2B2B2B;
+}
+.other-pages a:first-child{
+  padding-left: 0;
+  padding-right: 5px;
+}
+
 
 
 @media (min-width:768px) {
