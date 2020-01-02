@@ -44,6 +44,7 @@ a:hover{
 }
 .breadcrumbs a, .breadcrumbs h6, .display-mode i, .search h6{
   margin: 0;
+  text-transform: capitalize;
   font-size: .7rem;
   opacity: 0.7098039215686275;
   color: #000;
@@ -56,26 +57,48 @@ a:hover{
 }
 
 
-/* content */
-.post{
-  margin-bottom: 2rem;
+/* article */
+#article{
+  margin: 2rem 0;
 }
-.date-block{
-  margin: 10px 0;
-  width: 25%;
-  background: #919191;
-  text-align: center;
-  color: #fff;
+#article .container{
+  position: relative;
 }
-.date-block span:first-child:after{
-  content:", ";
-}
-.summary h2{
+.article h2{
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 1.4rem;
   color: #494949;
+}
+.date-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: .5rem;
+  left: 1.2rem;
+  width: 3em;
+  height: 3em;
+  background: #FFFFFF;
+  text-align: center;
+  color: #494949;
+}
+.date-block span:first-child{
+  line-height: 1;
+  font-size: .9rem;
+  font-weight: bold;
+}
+.date-block span:last-child{
+  font-size: .7rem;
+}
+.article-info{
+  position: absolute;
+  top: .5rem;
+  right: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  color: #4C4C4C;
 }
 .summary p{
   margin: 1.5rem 0;
@@ -184,22 +207,8 @@ a:hover{
 }
 
 @media(min-width: 576px){
-  .date-block{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    width: 100%;
-    height: 30%;
-  }
-  .date-block span:first-child{
-    line-height: 1;
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  .date-block span:first-child:after{
-    content:"";
-  }
+
+
   .summary{
     margin-bottom: 2rem;
     position: relative;
