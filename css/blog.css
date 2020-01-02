@@ -195,8 +195,22 @@ a:hover{
 }
 
 @media (min-width:768px) {
-
+  .sidebar{
+    margin: 0;
   }
+  .sidebar .classification{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+  .sidebar .popular-post{
+    order:0;
+  }
+  .sidebar .popular-post .row{
+    flex-direction: row-reverse;
+  }
+}
 
 @media (min-width:992px){
 
