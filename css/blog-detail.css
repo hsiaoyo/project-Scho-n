@@ -100,6 +100,9 @@ a:hover{
   font-size: .9rem;
   color: #4C4C4C;
 }
+.article{
+  margin: 2rem 0;
+}
 .article p{
   margin: 1.5rem 0;
   color: #494949;
@@ -115,7 +118,32 @@ a:hover{
   font-size: .8rem;
   color: #919191;
 }
-
+.author{
+  padding: 1rem;
+  background: #F4F4F4;
+}
+.author img{
+  width: 40%;
+}
+.author h3{
+  text-transform: capitalize;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+  color: #171717;
+}
+.author-info{
+  margin: .8rem 0;
+}
+.author-info p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.8rem;
+  color: #898989;
+}
+.social-media i{
+  padding-right: 8px;
+  font-size: 1rem;
+  color: #151515;
+}
 
 #buttom{
   text-align: center;
@@ -144,5 +172,5 @@ a:hover{
 }
 
 @media (min-width:992px){
-  
+
  }
