@@ -194,6 +194,10 @@ img.payment{
   margin: 0.5rem auto;
   width: 50%;
 }
+#footer{
+  padding: 1rem 0;
+  background: #F4F4F4;
+}
 #buttom{
   margin: 40px 0;
 }
