@@ -10,6 +10,9 @@ a:hover{
   color: #bbbbbb;;
   transition: all .3s linear;
 }
+.navbar li:last-child a:last-child:hover{
+  color: #494949;
+}
 #header{
   margin: 30px 0 0;
   background: #F4F4F4;
@@ -49,13 +52,17 @@ a:hover{
   opacity: 0.7098039215686275;
   color: #000;
 }
+.breadcrumbs a:hover, .display-mode i:hover, .search h6:hover{
+  cursor: pointer;
+  color:#bbb;
+  transition: color .3s linear;
+}
 .search{
   display: flex;
 }
 .search h6:first-child{
   padding-right: 1rem;
 }
-
 
 /* article */
 #article{
@@ -146,10 +153,14 @@ a:hover{
 .comment p{
   margin-top: 1rem;
 }
-.social-media i{
+.social-media a{
   padding-right: 8px;
   font-size: 1rem;
   color: #151515;
+}
+.social-media a:hover{
+  color: #bbbbbb;
+  transition:all .3s linear
 }
 #comment h1, #leave-comment h1{
   margin-bottom: 0;
@@ -162,7 +173,7 @@ a:hover{
 #comment .container > hr{
   margin-top: .2rem;
   border-top: 3px solid #494949;
-  width: 20%;
+  width: 10%;
 }
 #comment h4{
   margin-bottom: 0;
@@ -235,7 +246,6 @@ a:hover{
 }
 
 @media(min-width: 576px){
-
   .post-info{
     justify-content: flex-start;
   }
@@ -248,6 +258,7 @@ a:hover{
   #leave-comment form textarea{
     width: 60%;
   }
+
 @media (min-width:768px) {
   .date-block{
     top: 1.5rem;
@@ -272,8 +283,17 @@ a:hover{
     background: white;
   }
   .pictures{
+    display: flex;
+    justify-content: space-evenly;
     margin: 0 auto;
     width: 90%;
+  }
+  .pictures .first.row{
+    width: 32%;
+  }
+  .pictures .second.row{
+    align-items: flex-start;
+    width: 62%;
   }
   .author{
     width: 95%;
@@ -282,13 +302,12 @@ a:hover{
   .author-info p{
     margin: 0 0 .5rem;
   }
-  .social-media i{
+  .social-media a{
     padding-right: 3px;
   }
   #comment, #leave-comment{
      margin: 0 auto 5rem;
      width: 70%;
-
    }
   #leave-comment .input{
     display: flex;
@@ -303,5 +322,7 @@ a:hover{
 }
 
 @media (min-width:992px){
-
+  #comment, #leave-comment{
+     width: 60%;
+   }
  }
