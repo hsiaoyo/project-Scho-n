@@ -201,9 +201,11 @@ a:hover{
   height: 30px;
   background: #F7F7F7;
   outline: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
 }
 #leave-comment form textarea{
-  padding: 0 15px;
+  padding: 10px 15px;
   height: 4rem;
   width: 100%;
 }
