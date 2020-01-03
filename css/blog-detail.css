@@ -134,20 +134,24 @@ a:hover{
 .author-info{
   margin: .8rem 0;
 }
-.author-info p{
+.author-info p, .comment p{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.8rem;
   color: #898989;
+}
+.comment p{
+  margin-top: 1rem;
 }
 .social-media i{
   padding-right: 8px;
   font-size: 1rem;
   color: #151515;
 }
-#comment h1{
+#comment h1, #leave-comment h1{
   margin-bottom: 0;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   font-size: 1rem;
   color: #494949;
 }
@@ -156,6 +160,62 @@ a:hover{
   border-top: 3px solid #494949;
   width: 20%;
 }
+#comment h4{
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: .8rem;
+  color: #171717;
+}
+#comment i{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .6rem;
+  color: #171717;
+}
+.comment{
+  align-items: flex-start;
+}
+.comment.reply{
+  position: relative;
+  left: 17%;
+  width: 87%;
+}
+.comment img{
+  padding-right: 0;
+}
+.comment hr{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#leave-comment form{
+  margin: 1.5rem 0;
+}
+#leave-comment form .row{
+  margin: 0;
+}
+#leave-comment form input, #leave-comment form textarea{
+  margin-bottom: .8rem;
+  border: 0;
+  width: 70%;
+  height: 30px;
+  background: #F7F7F7;
+  outline: none;
+}
+#leave-comment form textarea{
+  padding: 0 15px;
+  height: 4rem;
+  width: 100%;
+}
+#leave-comment form button{
+  padding: 10px 15px;
+  border: 0;
+  background: #F7F7F7;
+  font-size: .5rem;
+  color: #858585;
+}
+
+
 #buttom{
   text-align: center;
 }
