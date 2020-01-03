@@ -118,6 +118,9 @@ a:hover{
   font-size: .8rem;
   color: #919191;
 }
+.pictures img{
+  margin-bottom: 1.5rem;
+}
 .author{
   padding: 1rem;
   background: #F4F4F4;
@@ -216,8 +219,6 @@ a:hover{
   font-size: .5rem;
   color: #858585;
 }
-
-
 #buttom{
   text-align: center;
 }
