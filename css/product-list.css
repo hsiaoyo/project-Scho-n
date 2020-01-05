@@ -62,9 +62,43 @@ i.icon-star, i.icon-star-empty{
   z-index: 99;
   top: 0;
   left: 0;
-  background: #e6e6e6;
+  background: #F4F4F4;
   width: 100%;
   height: 100%;
+}
+.filter h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #919191;
+}
+.brand-filter, .price-filter{
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  top: 5%;
+}
+.brand-filter ul{
+  margin: 2rem 0;
+}
+.brand-filter li{
+  margin-bottom: .7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-filter li h5, span.num{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: .9rem;
+  color: #919191;
+}
+.filter .checkbox{
+   margin-right: .3rem;
+   display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #919191;
 }
 .sidebar-title h3{
   text-transform: uppercase;
