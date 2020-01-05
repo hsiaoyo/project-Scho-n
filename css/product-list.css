@@ -47,6 +47,27 @@ i.icon-star, i.icon-star-empty{
   position: relative;
   height: 23vh;
 }
+/* sidebar */
+#sidebar .container{
+  display: flex;
+  justify-content: space-around;
+}
+.filter, .categories, .hot-sale{
+  display: none;
+}
+.sidebar-title h3{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: .8rem;
+  color: #494949;
+}
+
+
+
+
+
 .feature{
   position: relative;
 }
