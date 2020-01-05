@@ -239,7 +239,7 @@ span.sale-price{
   padding: 0 5px;
   font-size: .5rem;
 }
-.product:nth-child(2) h4:before, .product:last-child h4:before{
+.product:nth-child(2) h4:before, .product:nth-child(3) h4:before, .product:nth-child(6) h4:before, .product:nth-child(9) h4:before{
   content:"";
   display: block;
   height: 23px;
