@@ -1,0 +1,344 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+i.icon-star, i.icon-star-empty{
+  font-size: 10px;
+  color: #C8A760;
+}
+#header{
+  margin: 30px 0;
+  background: #F4F4F4;
+  text-align: center;
+  color: #494949;
+}
+#header h1{
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+#header a, #header h6{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.8rem;
+}
+#header a.search{
+  align-self: flex-start;
+  color: #ccc8c8;
+}
+#header a:hover{
+  color: #909090;
+}
+.breadcrumbs{
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs h6{
+  margin: 0;
+}
+#header .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 23vh;
+}
+.feature{
+  position: relative;
+}
+.featured h4{
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #747474;
+}
+.featured h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #010101;
+}
+.featured h3 i, .best h3 i{
+  font-size: 1rem;
+}
+.discount-sticker{
+  position: absolute;
+  top: 5%;
+  padding: 0.3rem;
+  margin: 0;
+  background: #B2CC29;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+.discount-sticker.smaller{
+  position: relative;
+  padding: 0 5px;
+  font-size: .5rem;
+}
+
+
+.featured:nth-child(2) h4:before, .featured:last-child h4:before{
+  content:"";
+  display: block;
+  height: 23px;
+}
+
+.support i{
+  font-size: 1.5rem;
+  color: #838182;
+}
+.gray-background{
+  padding: 20px 0;
+  background: #F6F6F6;
+}
+.support h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #353535;
+}
+.support h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #353535;
+}
+hr{
+  margin: 2.5rem 0;
+}
+.company-info h4{
+  font-size: 0.5rem;
+  line-height: 1.8;
+  font-family: 'Open Sans', sans-serif;
+  color:#868686;
+}
+.subscribe{
+  display: flex;
+  margin: 20px 0;
+}
+.subscribe input{
+  padding: 10px;
+  max-width: 60%;
+  height: 43px;
+  border:solid #fff;
+  border-top-left-radius: 50em;
+  border-bottom-left-radius: 50em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  color: #696969;
+}
+.subscribe button{
+  height: 43px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 50em;
+  border-bottom-right-radius: 50em;
+  background: #696969;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  color: #fff;
+}
+@media (min-width:576px) {
+  .the-third{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .product.third{
+    width: 49%;
+  }
+  .product.third.dark{
+    width: 49%;
+  }
+  .product.third.dark img{
+    height: 233.73px;
+  }
+  .intro_5 h4 {
+    margin-bottom: 0.5rem;
+  }
+  .control{
+    display: block;
+  }
+}
+
+@media (min-width:768px){
+  #top .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .customer{
+    margin-top: 0px;
+  }
+  #nav ul.navbar{
+    position: static;
+  }
+  #logo{
+    margin: 10px 0;
+  }
+  #logo img{
+    width: 15%;
+  }
+  .nav{
+    justify-content: space-between;
+  }
+  .user-tool{
+    margin: 0;
+    width: auto;
+  }
+  .product.first, .product.second{
+    padding: 40px;
+    height: 75vh;
+  }
+  .product.first.white{
+    height: 80vh;
+  }
+  .intro_1 h4, .second h4{
+    font-size:1rem;
+  }
+  .fourth h4{
+    font-size: 1.7rem;
+  }
+  .intro_1 h1{
+    font-size: 3.5rem;
+  }
+  .intro_1 p{
+    font-size: 1rem;
+  }
+  .product.first.white .intro_1 h1{
+    font-size: 2.9rem;
+  }
+
+  /* wrapper */
+  .wrapper2{
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .product.second{
+    margin: 0;
+    height: auto;
+  }
+  .the-third{
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+  }
+  .product.third.dark{
+    margin-bottom: 0;
+  }
+  .product.third, .product.third.dark{
+    width: 97%;
+  }
+  .product.third.dark img{
+    height: auto;
+  }
+  h2.price{
+    font-size: 2rem;
+  }
+  .second h3{
+    font-size: 2rem;
+  }
+  .price-sticker{
+    bottom: 25%;
+    height: 130px;
+    width: 130px;
+  }
+  .price-sticker h6{
+    font-size: 1.2rem;
+  }
+  .price-sticker h6 span{
+    font-size: .7rem;
+  }
+  h2.price span{
+    font-size: 1.5rem;
+  }
+  .shop-black{
+    bottom: 10%
+  }
+}
+@media (min-width:992px) {
+  #logo img{
+    width:100%;
+  }
+  #nav .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  #nav ul.navbar {
+    width: 40vw;
+  }
+  .nav {
+    justify-content: flex-end;
+  }
+  .navbar li {
+    font-size: .8rem;
+    margin-right: 10px;
+  }
+  .user-tool a:first-child{
+    margin-right: 10px;
+  }
+  .product.third .price{
+    margin: 0;
+    font-size: 1.5rem;
+  }
+ .wrapper3{
+   display: flex;
+   justify-content: space-between;
+ }
+ .the-fourth{
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+ }
+ .product.first.white{
+   width: 54%;
+   height: auto;
+ }
+  #flagship-product .container:last-child{
+    display: flex;
+  }
+  .best.col-lg-2{
+    padding: 0;
+  }
+  .best-sell-products.row{
+    justify-content: space-evenly;
+  }
+  .support{
+    display: flex;
+    align-items: center
+  }
+  .support i{
+    font-size: 2.5rem;
+    padding-right: 8px;
+  }
+  #customer-support .support{
+    width: auto;
+  }
+  .wrapper1{
+    display: flex;
+  }
+  .product.first:first-child{
+    margin-right: 10px;
+    height: auto;
+  }
+  .wrapper2{
+    justify-content: space-between;
+  }
+  .product.second{
+    width: 45%;
+    padding: 20px;
+  }
+  .product.second h3{
+    font-size: 1.5rem;
+  }
+  .the-third{
+    width: 54%;
+  }
+}
