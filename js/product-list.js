@@ -12,7 +12,7 @@ $(document).ready(function(){
   $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
     " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
-  $('.hot-sale-slick').slick({});
+  // $('.hot-sale-slick').slick({});
 
   $('.sidebar-title').click(function(e){
     $(e.currentTarget).siblings().addClass('display-block')
