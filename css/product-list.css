@@ -56,9 +56,14 @@ i.icon-star, i.icon-star-empty{
   justify-content: space-around;
   position: relative;
 }
+.sidebar-title{
+  display: flex;
+  align-items: center;
+}
 .sidebar-title h3{
   margin: 0;
   text-transform: uppercase;
+  text-decoration: underline;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -70,6 +75,7 @@ i.icon-star, i.icon-star-empty{
 .sidebar-title h3:hover{
   color: #bbb;
 }
+
 .close{
   position: absolute;
   top: 1rem;
@@ -111,10 +117,20 @@ i.icon-star, i.icon-star-empty{
   margin: 2rem 0;
 }
 .brand-filter li{
+  position: relative;
   margin-bottom: .7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+}
+.brand-filter li i{
+  display: none;
+  position: absolute;
+  top: -3px;
+  left: 13px;
+  font-size: 1.1rem;
+  color: #919191;
 }
 .brand-filter li h5, span.num{
   display: flex;
@@ -203,9 +219,6 @@ span.sale-price{
   font-weight: 500;
   font-size: 1.2rem;
   color: #252528;
-}
-.product{
-  cursor: pointer;
 }
 .product h4{
   margin: 0;
@@ -313,6 +326,7 @@ hr{
   .sidebar-title h3{
     padding: 0 .9rem;
     margin: 1rem 0;
+    text-decoration: none;
     font-size: 1rem;
     color: #494949;
     cursor: default;
@@ -329,6 +343,9 @@ hr{
  }
   .brand-filter ul {
     margin: 1rem 0;
+  }
+  .brand-filter li i {
+    left: 5px;
   }
   .ui-slider-horizontal {
     height: 0.3em;
