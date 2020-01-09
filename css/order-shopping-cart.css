@@ -33,7 +33,7 @@
   margin: 0;
 }
 /* process */
-#process{
+#process, #my-product{
   margin-bottom: 3rem;
 }
 ol.step{
@@ -65,7 +65,8 @@ li.step-item div h5, li.step-item h4{
 li.step-item h4{
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: capitalize;
-  font-size: 1rem;
+  text-align: center;
+  font-size: .8rem;
 }
 li.step-item.step-current div{
   border: 2px solid #000;
@@ -73,10 +74,52 @@ li.step-item.step-current div{
 li.step-item.step-current div h5, li.step-item.step-current h4{
   color: #000;
 }
-
-
-
-
+/* my-product */
+#my-product .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#my-product th{
+  padding-left: 0;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: #808080;
+}
+#my-product th.full-name{
+  display: none;
+}
+#my-product td{
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .8rem;
+  color: #010101;
+}
+#my-product span.product-name{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: .8rem;
+  color: #757575;
+}
+#my-product td:last-child{
+  display: none;
+}
+.use-coupon input{
+  padding: .5rem 1rem;
+  border: 1px solid #eee;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .8rem;
+  color: #7D7D7D;
+}
+button.apply{
+  padding: 5px;
+  border: 0;
+  width: 100px;
+  height: 37px;
+  text-transform: uppercase;
+  background: #CBA233;
+  color: white;
+}
 
 
 
