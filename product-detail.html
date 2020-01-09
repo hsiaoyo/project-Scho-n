@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fontello.css">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+ <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/product-detail.css">
 
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/popper.min.js"></script>
-  <script src="js/jquery-migrate-1.2.1.min.js"></script>
-  <script src="js/slick.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/aboutus.js"></script>
   <script src="js/product-detail.js"></script>
 </head>
 <body>
@@ -81,14 +81,26 @@
             <i class="icon-chat"></i><span class="comment-num">12</span>
             <i class="icon-share"></i><span class="share-num">14</span>
           </div>
-          <div class="silder">
-            <img src="images/510x45o.png" alt="img">
+          <div class="view-image">
+            <img src="images/510x450.png" alt="img">
+            <div class="slider-img owl-carousel owl-theme">
+              <img src="images/105x105.png" alt="img">
+              <img src="images/105x105.png" alt="img">
+              <img src="images/105x105.png" alt="img">
+              <img src="images/105x105.png" alt="img">
+              <img src="images/105x105.png" alt="img">
+              <img src="images/105x105.png" alt="img">
+            </div>
           </div>
         </div>
         <div class="product-info col-lg-6">
-          <h6>chair<i class="icon-angle-right"></i>products</h6>
+          <div class="breadcrumbs">
+            <h6><a href="#">chair</a><i class="icon-angle-right"></i>products</h6>
+          </div>
           <h1>kaila fabric chair</h1>
-          <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i><span>reviews(12)</span>
+          <div class="judgement">
+            <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i><span>reviews(12)</span>
+          </div>
           <div class="actions">
             <div>
               <i class="icon-share"></i><span>share</span>
@@ -103,6 +115,7 @@
           <hr>
           <div class="product-intro">
             <p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
+            <br>
             <p>Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair. </p>
           </div>
           <hr>
@@ -110,8 +123,16 @@
             <span class="sale-price">$79.00</span><span class="original-price">399.00</span>
           </div>
           <div class="add-action">
-            <label>QTY:</label><div>1</div>
+            <div class="quantity">
+              <label for="spinner">QTY:</label>
+              <span class="amount minus">-</span>
+              <input id="spinner" name="value" class="rounded-pill" value="1">
+              <span class="amount plus">+</span>
+
+            </div>
             <button class="rounded-pill">add to cart</button>
+          </div>
+
           </div>
         </div>
       </div>
@@ -120,20 +141,25 @@
   <div id="product-desc">
     <div class="container">
       <div id="tabs">
-        <ul>
-          <li><a href="#tabs-1">description</a></li>
-          <li><a href="#tabs-2">information</a></li>
-          <li><a href="#tabs-3">reviews(12)</a></li>
+        <ul class="tabs">
+          <li class="active">description</li>
+          <li>information</li>
+          <li>reviews(12)</li>
         </ul>
-        <div id="tabs-1">
-          <p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
-          <p>Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair. </p>
-        </div>
-        <div id="tabs-2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit et quas cum? Dolore vero, nisi delectus iusto illum id repudiandae molestiae praesentium, qui reprehenderit quos ea explicabo aperiam molestias minus!</p>
-        </div>
-        <div id="tabs-3">
-          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+        <hr>
+        <div class="contents">
+          <div class="content active">
+            <p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
+            <p>Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair. </p>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit et quas cum? Dolore vero, nisi delectus iusto illum id repudiandae molestiae praesentium, qui reprehenderit quos ea explicabo aperiam molestias minus!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit et quas cum? Dolore vero, nisi delectus iusto illum id repudiandae molestiae praesentium, qui reprehenderit quos ea explicabo aperiam molestias minus!</p>
+          </div>
+          <div class="content">
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+          </div>
         </div>
       </div>
     </div>
@@ -141,8 +167,9 @@
   </div>
   <div id="related-product">
     <div class="container">
-      <div class="best-sell-products row">
-        <div class="best col-6 col-sm-4 col-lg-2">
+      <h2>related product</h2>
+      <div class="row related-product">
+        <a href="#" class="best col-6 col-sm-4 col-lg-2">
           <div class="thumbnail">
             <img src="images/213x213.png" alt="img" class="img-fluid">
             <div class="new-sticker">new</div>
@@ -152,22 +179,22 @@
           </div>
           <h4>Puff Chair</h4>
           <h3><i class="icon-euro"></i>287,00</h3>
-        </div>
-        <div class="best col-6 col-sm-4 col-lg-2">
+        </a>
+        <a  href="#" class="best col-6 col-sm-4 col-lg-2">
           <div class="thumbnail">
             <img src="images/213x213.png" alt="img" class="img-fluid">
           </div>
           <h4>Bombi Chair</h4>
           <h3><i class="icon-euro"></i>399,00</h3>
-        </div>
-        <div class="best col-6 col-sm-4 col-lg-2">
+        </a>
+        <a href="#" class="best col-6 col-sm-4 col-lg-2">
           <div class="thumbnail">
             <img src="images/213x213.png" alt="img" class="img-fluid" >
           </div>
           <h4>Bombi Chair</h4>
           <h3><i class="icon-euro"></i>200,00</h3>
-        </div>
-        <div class="best col-6 col-sm-4 col-lg-2">
+        </a>
+        <a href="#"  class="best col-6 col-sm-4 col-lg-2">
           <div class="thumbnail">
             <img src="images/213x213.png" alt="img" class="img-fluid">
             <div class="stickers">
@@ -177,14 +204,14 @@
           </div>
           <h4>Wood Chair</h4>
           <h3><i class="icon-euro"></i>198,00</h3>
-        </div>
-        <div class="best col-6 col-sm-4 col-lg-2">
+        </a>
+        <a href="#" class="best col-6 col-sm-4 col-lg-2">
           <div class="thumbnail">
             <img src="images/213x213.png" alt="img" class="img-fluid">
           </div>
           <h4>Bombi Chair</h4>
           <h3><i class="icon-euro"></i>200,00</h3>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -193,7 +220,6 @@
 
 
 
-  <div class="gray-background">
 
    <div id="footer">
      <div class="container">
@@ -287,7 +313,7 @@
          <div class="get-more-info col-lg-3">
            <h4>Sing Up Newsletter</h4>
            <h5>Subscribe now to get 15% off on any product</h5>
-           <div class="rounded-pill d-inline-block" contenteditable="true">Your Email</div>
+           <div class="rounded-pill d-inline-block" contenteditable="true">Your Email <i class="icon-angle-right float-right"></i></div>
            <div class="follow">
              <h4>Follow Us</h4>
              <ul class="social-media clearfix list-inline">
