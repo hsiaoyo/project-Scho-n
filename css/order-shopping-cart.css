@@ -48,6 +48,11 @@ li.step-item{
   align-items: center;
   height: 15vh;
 }
+li.step-item::before{
+  width: 30px;
+  height: 1px;
+  border: 1px solid #000;
+}
 li.step-item div{
   display: flex;
   align-items: center;
@@ -140,6 +145,46 @@ button.apply{
   border: 1px solid #eee;
   color: #7D7D7D;
   font-size: .8rem;
+}
+button.update{
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  background: #F6F6F6;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: #C6C6C6;
+}
+table.total{
+  width: 100%;
+}
+table.total tr{
+  height: 2rem;
+  border-bottom: 1px solid #eee;
+}
+table.total td:first-child{
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .8rem;
+  color: #808080;
+}
+table.total td:last-child{
+  text-align: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #010101;
+}
+
+table.total td.free-ship{
+  font-size: .8rem;
+}
+button.go-checkout{
+  margin: 1rem 0;
+  padding: 5px 10px;
+  border: 0;
+  background: #88BD6E;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  color: white;
 }
 
 .gray-background{
