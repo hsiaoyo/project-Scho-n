@@ -103,43 +103,65 @@
       <table>
         <thead>
           <tr>
-            <th>product</th>
-            <th>price</th>
-            <th>quantity</th>
-            <th>total</th>
-            <th></th>
+            <th class="col-4">product</th>
+            <th class="col-3">price</th>
+            <th class="col-2 abbrev">QTY</th>
+            <th class="col-2 full-name">quantity</th>
+            <th class="col-3">total</th>
+            <th class="col-1"></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td class="col-4">
               <img src="images/106x106.png" alt="img">
-              <span>Marvelous Modern 3 Seater</span>
+              <span class="product-name">Marvelous Modern 3 Seater</span>
             </td>
-            <td><i class="icon-euro"></i>599</td>
-            <td>1</td>
-            <td><i class="icon-euro"></i>599</td>
-            <td>X</td>
+            <td class="col-3"><i class="icon-euro"></i>599,00</td>
+            <td class="col-2">
+              <select class="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+              </select>
+            </td>
+            <td class="col-3"><i class="icon-euro"></i>599,00</td>
+            <td class="col-1">X</td>
           </tr>
           <tr>
-            <td>
+            <td class="col-4">
               <img src="images/106x106.png" alt="img">
-              <span>Marvelous Modern 3 Seater</span>
+              <span class="product-name">Marvelous Modern 3 Seater</span>
             </td>
-            <td><i class="icon-euro"></i>599</td>
-            <td>1</td>
-            <td><i class="icon-euro"></i>599</td>
-            <td>X</td>
+            <td class="col-3"><i class="icon-euro"></i>599,00</td>
+            <td class="col-2">
+              <select class="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+              </select>
+            </td>
+            <td class="col-3"><i class="icon-euro"></i>599,00</td>
+            <td class="col-1">X</td>
           </tr>
           <tr>
-            <td>
+            <td class="col-4">
               <img src="images/106x106.png" alt="img">
-              <span>Marvelous Modern 3 Seater</span>
+              <span class="product-name">Marvelous Modern 3 Seater</span>
             </td>
-            <td><i class="icon-euro"></i>599</td>
-            <td>1</td>
-            <td><i class="icon-euro"></i>599</td>
-            <td>X</td>
+            <td class="col-3"><i class="icon-euro"></i>599,00</td>
+            <td class="col-2">
+              <select class="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+              </select>
+            </td>
+            <td class="col-3"><i class="icon-euro"></i>599,00</td>
+            <td class="col-1">X</td>
           </tr>
         </tbody>
       </table>
@@ -172,7 +194,7 @@
             </select>
           </form>
         </div>
-        <div class="cart-total">
+        <div class="cart-total col-md-6">
           <h3>cart total</h3>
           <table class="total">
             <tr>
