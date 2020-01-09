@@ -48,10 +48,14 @@ li.step-item{
   align-items: center;
   height: 15vh;
 }
-li.step-item::before{
-  width: 30px;
+li.step-item:first-child:after, li.step-item:nth-child(2):after{
+  position: absolute;
+  top: 28px;
+  left: 75%;
+  width: 51%;
   height: 1px;
-  border: 1px solid #000;
+  content: '';
+  background-color: #eee;
 }
 li.step-item div{
   display: flex;
