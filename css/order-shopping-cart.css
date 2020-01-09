@@ -32,6 +32,54 @@
 .breadcrumbs h6{
   margin: 0;
 }
+/* process */
+#process{
+  margin-bottom: 3rem;
+}
+ol.step{
+  margin-bottom: 0;
+  position: relative;
+  list-style-type: none;
+}
+li.step-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+li.step-item div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: .5rem;
+  border-radius: 50%;
+  border: 2px solid #eee;
+}
+li.step-item div h5, li.step-item h4{
+  margin: 0;
+  color: #9f9f9f;
+}
+li.step-item h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+li.step-item.step-current div{
+  border: 2px solid #000;
+}
+li.step-item.step-current div h5, li.step-item.step-current h4{
+  color: #000;
+}
+
+
+
+
+
+
+
 .gray-background{
   padding: 20px 0;
   background: #F6F6F6;
