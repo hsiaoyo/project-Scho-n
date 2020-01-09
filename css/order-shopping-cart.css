@@ -21,7 +21,6 @@
   font-size: 0.8rem;
   color: #2F2F2F;
 }
-
 #header a:hover{
   color: #909090;
 }
@@ -89,17 +88,39 @@ li.step-item.step-current div h5, li.step-item.step-current h4{
   flex-direction: column;
   align-items: center;
 }
+#my-product table{
+  width: 100%;
+}
 #my-product th{
-  padding-left: 0;
   text-transform: uppercase;
   font-size: .8rem;
   color: #808080;
 }
-#my-product th.full-name{
+#my-product th, #my-product td{
+  padding-right: 1rem;
+}
+#my-product th:last-child, #my-product td:last-child{
+  padding: 0;
+}
+#my-product th.full-name, #my-product th.delete{
   display: none;
 }
+#my-product tr{
+  border-bottom: 1px solid #eee;
+}
+#my-product img{
+  padding: 1rem 0;
+}
+#my-product .first{
+  width: 35%;
+}
+#my-product .second, #my-product .fourth{
+  width: 25%;
+}
+#my-product .third{
+  width: 15%;
+}
 #my-product td{
-  padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: .8rem;
   color: #010101;
@@ -112,6 +133,10 @@ li.step-item.step-current div h5, li.step-item.step-current h4{
 }
 #my-product td:last-child{
   display: none;
+}
+
+.use-coupon{
+  margin: 1.5rem 0;
 }
 .use-coupon input{
   padding: .5rem 1rem;
@@ -207,10 +232,60 @@ button.go-checkout{
   margin: 20px 0;
 }
 @media (min-width:576px){
+ #process, #my-product{
+  margin-bottom: 5rem;
+ }
+ #my-product th.delete{
+   display: table-cell;
+ }
+ #my-product td:last-child{
+   display: table-cell;
+   color: #F05C5C;
+   font-size: 1.2rem;
+ }
+ #my-product th, #my-product td{
+   padding-right: 0;
+   text-align: center;
+ }
+ #my-product th.first, #my-product td.first{
+   text-align: left;
+ }
+ #my-product .first{
+   width: 30%;
+ }
+ #my-product .fifth{
+   width: 5%;
+ }
+ #my-product th, #my-product span.product-name, #my-product td.second, #my-product td.fourth, select.quantity{
+   font-size: 1rem;
+ }
+
 
 }
 @media (min-width:768px) {
+  li.step-item:first-child:after, li.step-item:nth-child(2):after{
+    left: 63%;
+    width: 75%;
+  }
+  #my-product th.full-name{
+    display: table-cell;
+  }
+  #my-product th.abbrev{
+    display: none;
+  }
 }
 @media (min-width:992px) {
-
+  #my-product .first{
+    width: 50%;
+  }
+  #my-product .second, #my-product .third, #my-product .fourth{
+    width: 15%;
+  }
+  #my-product img{
+    padding: 1rem 3rem 1rem 0;
+    width: 30%;
+  }
+  #my-product span{
+    width: 70%;
+  }
 }
