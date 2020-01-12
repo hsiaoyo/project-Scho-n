@@ -27,10 +27,8 @@
   font-size: .8rem;
   color: #fff;
 }
-
-
-#header{
-  margin: 30px 0;
+#header_2 #header{
+  padding: 30px 0;
   text-align: center;
   color: #fff;
 }
@@ -41,13 +39,13 @@
   font-weight: bold;
   font-size: 1.4rem;
 }
-#header a, #header h6{
+#header_2 #header a, #header_2 #header h6{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.8rem;
-  color: #2F2F2F;
+  color: white;
 }
 #header a:hover{
-  color: #909090;
+  color: #000;
 }
 .breadcrumbs{
   display: flex;
@@ -57,7 +55,7 @@
   margin: 0;
 }
 /* process */
-#process, #my-product{
+#header_2, #process{
   margin-bottom: 3rem;
 }
 ol.step{
@@ -107,90 +105,12 @@ li.step-item.step-current div{
 li.step-item.step-current div h5, li.step-item.step-current h4{
   color: #000;
 }
-/* my-product */
-#my-product .container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#my-product table{
-  width: 100%;
-}
-#my-product th{
-  text-transform: uppercase;
-  font-size: .8rem;
-  color: #808080;
-}
-#my-product th, #my-product td{
-  padding-right: 1rem;
-}
-#my-product th:last-child, #my-product td:last-child{
-  padding: 0;
-}
-#my-product th.full-name, #my-product th.delete{
-  display: none;
-}
-#my-product tr{
-  border-bottom: 1px solid #eee;
-}
-#my-product img{
-  padding: 1rem 0;
-}
-#my-product .first{
-  width: 35%;
-}
-#my-product .second, #my-product .fourth{
-  width: 25%;
-}
-#my-product .third{
-  width: 15%;
-}
-#my-product td{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: .8rem;
-  color: #010101;
-}
-#my-product span.product-name{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  font-size: .8rem;
-  color: #757575;
-}
-#my-product td:last-child{
-  display: none;
-}
-
-.use-coupon{
-  margin: 1.5rem 0;
-}
-.use-coupon input{
-  padding: .5rem 1rem;
-  border: 1px solid #eee;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: .8rem;
-  color: #7D7D7D;
-}
-button.apply{
-  padding: 5px;
-  border: 0;
-  width: 100px;
-  height: 37px;
-  text-transform: uppercase;
-  background: #CBA233;
-  color: white;
-}
-/* info-check */
-.check{
-  margin-bottom: 1.5rem;
-}
-.check h3{
+#order-confirm h2{
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
-.shipping form select{
+form.billing-details select, form.billing-details input, form.billing-details textarea{
   margin-bottom: .5rem;
   padding: .5rem;
   background: #fff;
@@ -199,15 +119,13 @@ button.apply{
   border: 1px solid #eee;
   color: #7D7D7D;
   font-size: .8rem;
+  outline: none;
 }
-button.update{
-  padding: 5px 10px;
-  border: 1px solid #eee;
-  background: #F6F6F6;
-  text-transform: uppercase;
-  font-size: .8rem;
-  color: #C6C6C6;
+form.billing-details input[type="checkbox"]{
+  width: auto;
 }
+
+
 table.total{
   width: 100%;
 }
@@ -230,16 +148,7 @@ table.total td:last-child{
 table.total td.free-ship{
   font-size: .8rem;
 }
-button.go-checkout{
-  margin: 1rem 0;
-  padding: 5px 10px;
-  border: 0;
-  background: #88BD6E;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-size: .8rem;
-  color: white;
-}
+
 
 .gray-background{
   padding: 20px 0;
@@ -257,33 +166,10 @@ button.go-checkout{
   margin: 20px 0;
 }
 @media (min-width:576px){
- #process, #my-product{
+ #process{
   margin-bottom: 5rem;
  }
- #my-product th.delete{
-   display: table-cell;
- }
- #my-product td:last-child{
-   display: table-cell;
-   color: #F05C5C;
-   font-size: 1.2rem;
- }
- #my-product th, #my-product td{
-   padding-right: 0;
-   text-align: center;
- }
- #my-product th.first, #my-product td.first{
-   text-align: left;
- }
- #my-product .first{
-   width: 30%;
- }
- #my-product .fifth{
-   width: 5%;
- }
- #my-product th, #my-product span.product-name, #my-product td.second, #my-product td.fourth, select.quantity{
-   font-size: 1rem;
- }
+
 
 
 }
@@ -292,25 +178,8 @@ button.go-checkout{
     left: 63%;
     width: 75%;
   }
-  #my-product th.full-name{
-    display: table-cell;
-  }
-  #my-product th.abbrev{
-    display: none;
-  }
+
 }
 @media (min-width:992px) {
-  #my-product .first{
-    width: 50%;
-  }
-  #my-product .second, #my-product .third, #my-product .fourth{
-    width: 15%;
-  }
-  #my-product img{
-    padding: 1rem 3rem 1rem 0;
-    width: 30%;
-  }
-  #my-product span{
-    width: 70%;
-  }
+
 }
