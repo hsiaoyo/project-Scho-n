@@ -106,6 +106,7 @@ li.step-item.step-current div h5, li.step-item.step-current h4{
   color: #000;
 }
 #order-confirm h2{
+  margin-bottom: 1rem;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
@@ -133,31 +134,64 @@ form.billing-details input[type="checkbox"]{
   margin-right: 1rem;
   width: auto;
 }
-
-
-table.total{
+.gray{
+  padding: 2rem 1rem;
+  background: #F6F6F6;
+}
+.order-details{
+  display: flex;
+  flex-direction: column;
+}
+.order th, .payment h4{
+  margin-bottom: 0;
+  line-height: 3;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #808080;
+}
+.order{
+  margin-bottom: 2rem;
+}
+table{
   width: 100%;
 }
-table.total tr{
-  height: 2rem;
-  border-bottom: 1px solid #eee;
+table.your-order td{
+  font-size: .8rem;
+  color: #636363;
 }
-table.total td:first-child{
-  text-transform: uppercase;
+.border-top{
+  border-top: 1px solid #ccc;
+}
+.pay-method .d-flex{
+  justify-content: space-between;
+  align-items: center;
+}
+.pay-method hr{
+  margin: 0;
+}
+.pay-method p{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: .8rem;
   color: #808080;
 }
-table.total td:last-child{
-  text-align: right;
+.order-details h4{
   font-family: 'Source Sans Pro', sans-serif;
-  color: #010101;
+  font-size: 1rem;
+  color:#808080;
 }
-
-table.total td.free-ship{
-  font-size: .8rem;
+.agree{
+  padding:1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.agree h4{
+  margin: 0;
+}
+button.go-checkout{
+  align-self: center;
+}
 
 .gray-background{
   padding: 20px 0;
