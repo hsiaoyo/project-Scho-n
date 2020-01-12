@@ -90,7 +90,6 @@
       </div>
   </div>
 
-
   <div id="process">
     <div class="container">
       <ol class="step row">
@@ -113,9 +112,11 @@
   <div id="order-confirm">
     <div class="container">
       <div class="row">
-        <div class="billing-details col-lg-6">
-          <form>
+        <div class="col-lg-6">
+          <h2>billing details</h2>
+          <form class="billing-details">
             <select name="country" id="country">
+              <option selected="selected">Select Country</option>
               <option value="America">America</option>
               <option value="Japan">Japan</option>
               <option value="Taiwan">Taiwan</option>
@@ -137,7 +138,7 @@
           <div class="gray">
             <div class="order">
               <h2>your order</h2>
-              <table>
+              <table class="your-order">
                 <tr>
                   <th>products</th>
                   <th>totals</th>
@@ -166,7 +167,7 @@
             </div>
             <div class="payment">
               <h2>payment methods</h2>
-              <table>
+              <table class="pay-method">
                 <tr>
                   <th>direct bank transfer</th>
                   </td><div><i class="icon-ok"></i></div></td>
