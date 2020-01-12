@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/order-shopping-cart.css">
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aboutus.js"></script>
+  <script src="js/product-detail.js"></script>
+</head>
+<body>
+  <div id="header_2">
+
+    <div id="nav">
+      <div class="container">
+        <div id="top">
+          <a href="tel:+1(555)333-22-11">+1(555)333 22 11</a>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Login or Create Account</a></li>
+            <li class="list-inline-item"><a href="#">Language<i class="icon-angle-down"></i></a></li>
+          </ul>
+        </div>
+        <div id="logo">
+          <a href="#"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="navbar">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PRODUCTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"></a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PAGES
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"></a>
+            </div>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">BLOG</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+          <li>
+            <a  href="#"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
+            <a  href="#"><img class="tools" src="images/heart @1X.png" alt="like"></a>
+            <a  href="#">
+              <img class="tools" src="images/handbag@1X-2.png" alt="cart">
+              <div class="items-num">3</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="header">
+      <div class="container">
+        <h1>check out</h1>
+        <div class="breadcrumbs">
+          <a href="https://hsiaoyo.github.io/project-Schon/home.html">Home</a><h6><i class="icon-angle-right"></i>Check Out</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="process">
+    <div class="container">
+      <ol class="step row">
+        <li class="step-item step-current col-4">
+          <div><h5>01</h5></div>
+          <h4>shopping cart</h4>
+        </li>
+        <li class="step-item step-current col-4">
+          <div><h5>02</h5></div>
+          <h4>check out</h4>
+        </li>
+        <li class="step-item col-4">
+          <div><h5>03</h5></div>
+          <h4>order complete</h4>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div id="my-product">
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th class="first">product</th>
+            <th class="second">price</th>
+            <th class="third abbrev">QTY</th>
+            <th class="third full-name">quantity</th>
+            <th class="fourth">total</th>
+            <th class="fifth delete"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="first">
+              <img src="images/106x106.png" alt="img">
+              <span class="product-name">Marvelous Modern 3 Seater</span>
+            </td>
+            <td class="second"><i class="icon-euro"></i>599,00</td>
+            <td class="third">
+              <select class="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+              </select>
+            </td>
+            <td class="fourth"><i class="icon-euro"></i>599,00</td>
+            <td class="fifth delete"><i class="icon-cancel"></i></td>
+          </tr>
+          <tr>
+            <td class="first">
+              <img src="images/106x106.png" alt="img">
+              <span class="product-name">Marvelous Modern 3 Seater</span>
+            </td>
+            <td class="second"><i class="icon-euro"></i>599,00</td>
+            <td class="third">
+              <select class="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+              </select>
+            </td>
+            <td class="fourth"><i class="icon-euro"></i>599,00</td>
+            <td class="fifth delete"><i class="icon-cancel"></i></td>
+          </tr>
+          <tr>
+            <td class="first">
+              <img src="images/106x106.png" alt="img">
+              <span class="product-name">Marvelous Modern 3 Seater</span>
+            </td>
+            <td class="second"><i class="icon-euro"></i>599,00</td>
+            <td class="third">
+              <select class="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+              </select>
+            </td>
+            <td class="fourth"><i class="icon-euro"></i>599,00</td>
+            <td class="fifth delete"><i class="icon-cancel"></i></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="use-coupon">
+        <input type="text" placeholder="Your Coupon Code">
+        <button class="apply">apply</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="info-check">
+    <div class="container">
+      <div class="row">
+        <div class="check shipping col-md-6">
+          <h3>calculate shipping</h3>
+          <form>
+            <select name="country" id="country">
+              <option selected="selected">Select Country</option>
+              <option value="America">America</option>
+              <option value="Japan">Japan</option>
+              <option value="Taiwan">Taiwan</option>
+            </select>
+            <select name="state" id="state">
+              <option selected="selected">State/Province</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="California">California</option>
+            </select>
+            <select name="postal-code" id="postal-code">
+              <option selected="selected">Zip/Postal Code</option>
+              <option value="001">001</option>
+              <option value="002">002</option>
+              <option value="003">003</option>
+            </select>
+          </form>
+          <button class="update">update total<i class="icon-arrows-cw"></i></button>
+        </div>
+        <div class="check cart-total col-md-6">
+          <h3>cart total</h3>
+          <table class="total">
+            <tr>
+              <td>
+                cart subtotal
+              </td>
+              <td class="price"><i class="icon-euro"></i>1299,00</td>
+            </tr>
+            <tr>
+              <td>shipping</td>
+              <td class="free-ship">Free shipping</td>
+            </tr>
+            <tr>
+              <td>
+                cart subtotal
+              </td>
+              <td class="price"><i class="icon-euro"></i>1299,00</td>
+            </tr>
+          </table>
+          <button class="go-checkout">proceed to chechout<i class="icon-ok"></i></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+   <div id="footer">
+     <div class="container">
+       <div class="row">
+         <div class="company-info col-lg-3">
+           <img src="images/CompositeLayer@1X.png" alt="logo">
+           <h4>Exercitation ullamco laboris nisi ut aliquip ex commodo consequat Duis aute irure</h4>
+           <div class="info map">
+             <i class="icon-location"></i>
+             <a href="#">Connaugt Road Central Suite 18B, 148 New Yankee</a>
+           </div>
+           <div class="info">
+             <i class="icon-phone"></i><a href="tel:+1-(555)-333-22-11">+1 (555) 333 22 11</a>
+           </div>
+           <div class="info">
+             <i class="icon-mail"></i><a href="mailto:info@schon.chair">info@schon.chair</a>
+           </div>
+         </div>
+         <div class="learn-more only-title">
+           <button class="btn d-block" type="button" data-toggle="collapse" data-target="#categories" aria-expanded="false" aria-controls="collapseExample">
+             Categories
+           </button>
+             <ul class="list" id="categories">
+               <li><a href="#">Chairs</a></li>
+               <li><a href="#">Sofas</a></li>
+               <li><a href="#">Living</a></li>
+               <li><a href="#">Bedroom</a></li>
+               <li><a href="#">Tables</a></li>
+               <li><a href="#">New</a></li>
+             </ul>
+           <button class="btn d-block" type="button" data-toggle="collapse" data-target="#information" aria-expanded="false" aria-controls="collapseExample">
+             Information
+           </button>
+           <div class="collapse" id="information">
+             <ul class="list">
+               <li> <a href="#">About Us</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Terms&amp;Condition</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="#">Customer Service</a></li>
+               <li><a href="#">FAQs</a></li>
+             </ul>
+           </div>
+           <button class="btn d-block" type="button" data-toggle="collapse" data-target="#account" aria-expanded="false" aria-controls="collapseExample">
+             Account
+           </button>
+           <div class="collapse" id="account">
+             <ul class="list">
+               <li> <a href="#">My Acount</a></li>
+               <li><a href="#">Order Tracking</a></li>
+               <li><a href="#">Wish List</a></li>
+               <li><a href="#">Shopping Cart</a></li>
+               <li><a href="#">Checkout</a></li>
+             </ul>
+           </div>
+         </div>
+         <div class="learn-more whole row col-lg-6">
+           <div class="col-md-4">
+             <h3>Categories</h3>
+             <ul>
+               <li><a href="#">Chairs</a></li>
+               <li><a href="#">Sofas</a></li>
+               <li><a href="#">Living</a></li>
+               <li><a href="#">Bedroom</a></li>
+               <li><a href="#">Tables</a></li>
+               <li><a href="#">New</a></li>
+             </ul>
+           </div>
+           <div class="col-md-4">
+             <h3>Information</h3>
+             <ul>
+               <li> <a href="#">About Us</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Terms&amp;Condition</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="#">Customer Service</a></li>
+               <li><a href="#">FAQs</a></li>
+             </ul>
+           </div>
+           <div class="col-md-4">
+             <h3>Account</h3>
+               <ul>
+                 <li> <a href="#">My Acount</a></li>
+                 <li><a href="#">Order Tracking</a></li>
+                 <li><a href="#">Wish List</a></li>
+                 <li><a href="#">Shopping Cart</a></li>
+                 <li><a href="#">Checkout</a></li>
+               </ul>
+           </div>
+         </div>
+         <div class="get-more-info col-lg-3">
+           <h4>Sing Up Newsletter</h4>
+           <h5>Subscribe now to get 15% off on any product</h5>
+           <div class="rounded-pill d-inline-block" contenteditable="true">Your Email <i class="icon-angle-right float-right"></i></div>
+           <div class="follow">
+             <h4>Follow Us</h4>
+             <ul class="social-media clearfix list-inline">
+               <li class="list-inline-item"><a href="#"><i class="icon-twitter"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="icon-facebook"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="icon-gplus"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="icon-youtube"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="icon-linkedin"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="icon-whatsapp"></i></a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div id="buttom">
+     <div class="container clearfix">
+       <img class="payment" src="images/Payment methods logos@1X.png" alt="payment">
+       <div class="copyright">
+         &copy;<span class="company-name">schön.</span><span>-All rights Reserved</span>
+       </div>
+     </div>
+   </div>
+</body>
+</html>
