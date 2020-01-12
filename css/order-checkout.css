@@ -8,20 +8,28 @@
   background-image: url(../images/checkout.png);
   background-size: cover;
 }
-#header_2 .opacity{
-  position: absolute;
-  top:0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #000;
-  opacity: .2;
+#header_2 a:hover, #header_2 #header a:hover{
+  color: #ccc;
 }
-#top li:first-child:after{
+#top{
+  padding: .5rem 0;
+}
+#top ul.list-inline > li:first-child:after{
   content: '|';
   margin-left: .5rem;
   color: white;
 }
+#top li.languages{
+  position: relative;
+}
+#top ul.language{
+  display: none;
+  background: #000;
+  padding: .5rem;
+  position: absolute;
+  z-index: 99;
+  width: 6rem;
+  }
 #top a{
   font-family: 'Open Sans';
   font-size: .8rem;
@@ -44,9 +52,7 @@
   font-size: 0.8rem;
   color: white;
 }
-#header a:hover{
-  color: #000;
-}
+
 .breadcrumbs{
   display: flex;
   align-items: center;
@@ -55,7 +61,7 @@
   margin: 0;
 }
 /* process */
-#header_2, #process{
+#header_2, #process, #order-confirm{
   margin-bottom: 3rem;
 }
 ol.step{
@@ -123,6 +129,9 @@ form.billing-details select, form.billing-details input, form.billing-details te
   font-size: .8rem;
   outline: none;
 }
+form.billing-details textarea[name="note"]{
+  height: 5rem;
+}
 form.billing-details div{
   display: flex;
   align-items: center;
@@ -159,6 +168,9 @@ table{
 table.your-order td{
   font-size: .8rem;
   color: #636363;
+}
+table.your-order td.product{
+  color: #aaa;
 }
 .border-top{
   border-top: 1px solid #ccc;
@@ -209,20 +221,60 @@ button.go-checkout{
   margin: 20px 0;
 }
 @media (min-width:576px){
+  #top .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
  #process{
   margin-bottom: 5rem;
  }
-
-
-
 }
 @media (min-width:768px) {
+  #process{
+    width: 80%;
+    margin: 0 auto 5rem;
+  }
   li.step-item:first-child:after, li.step-item:nth-child(2):after{
     left: 63%;
     width: 75%;
   }
+  table.your-order td{
+    font-size: 1rem;
+  }
+  form.billing-details textarea[name="address"]{
+    height: 5rem;
+  }
 
 }
 @media (min-width:992px) {
-
+  li.step-item:first-child:after, li.step-item:nth-child(2):after{
+    top:40px
+  }
+  li.step-item {
+    height: 19vh;
+  }
+  li.step-item div{
+    width: 65px;
+    height: 65px;
+  }
+  li.step-item div h5{
+     font-size: 1.5rem;
+  }
+  li.step-item h4{
+    font-size: 1.1rem;
+  }
+  #order-confirm .col-lg-6:first-child{
+    padding-right: 2rem;
+  }
+  #order-confirm .col-lg-6:last-child{
+    padding-left: 2rem;
+  }
+  form.billing-details select, form.billing-details input, form.billing-details textarea{
+    padding: 0 1rem;
+    height: 3rem;
+  }
+  form.billing-details input[name="address"]{
+    height: 5rem;
+  }
 }
