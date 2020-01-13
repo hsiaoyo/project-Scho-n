@@ -3,49 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-i.icon-star, i.icon-star-empty{
-  font-size: 10px;
-  color: #C8A760;
-}
-#header{
-  margin: 30px 0;
-  background: #F4F4F4;
-  text-align: center;
-  color: #494949;
-}
-#header h1{
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-#header a, #header h6{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 0.8rem;
-}
 #header a.search{
   align-self: flex-start;
   color: #ccc8c8;
-}
-#header a:hover{
-  color: #909090;
-}
-.breadcrumbs{
-  display: flex;
-  align-items: center;
-}
-.breadcrumbs h6{
-  margin: 0;
-}
-#header .container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 23vh;
 }
 /* sidebar */
 #sidebar{
@@ -76,16 +36,14 @@ i.icon-star, i.icon-star-empty{
   transition:.3s linear;
 }
 .sidebar-title h3:hover{
-  color: #bbb;
+  color: #fff;
 }
-
 .close{
   position: fixed;
   top: 1rem;
   right: 1.5rem;
   cursor: pointer;
 }
-
 .filter, .categories, .hot-sale{
   display: none;
   position: fixed;
@@ -223,6 +181,42 @@ span.sale-price{
   font-size: 1.2rem;
   color: #252528;
 }
+.show{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.show h6{
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .4rem;
+  color: #A5A5A5;
+}
+.show span{
+  font-weight: bold;
+  color: #525050;
+}
+.show .sorting{
+  display: flex;
+}
+.show .sorting .rounded-pill{
+  border: 1px solid #A5A5A5;
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: .8rem;
+  color: #A5A5A5;
+}
+.show .layout{
+  margin-left: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #a5a5a5;
+  border-radius: 50%;
+  color: #a5a5a5;
+}
 .product h4{
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -238,49 +232,26 @@ span.sale-price{
 .product h3 i, .best h3 i{
   font-size: 1rem;
 }
-.discount-sticker{
-  position: absolute;
-  top: 5%;
-  padding: 0.3rem;
-  margin: 0;
-  background: #B2CC29;
-  text-align: center;
-  font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-}
-.discount-sticker.smaller{
-  position: relative;
-  padding: 0 5px;
-  font-size: .5rem;
-}
 .product:nth-child(2) h4:before, .product:nth-child(3) h4:before, .product:nth-child(6) h4:before, .product:nth-child(9) h4:before{
   content:"";
   display: block;
   height: 23px;
 }
-
-.support i{
-  font-size: 1.5rem;
-  color: #838182;
+.pagenate-body{
+  margin: 1.5rem;
+  text-align: center;
 }
-.gray-background{
-  padding: 20px 0;
-  background: #F6F6F6;
+.pagenate-body li{
+  width: 2rem;
+  background: #F6F6F6
 }
-.support h2{
+.pagenate-body li a{
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #353535;
+  color: #bababa;
 }
-.support h3{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1rem;
-  color: #353535;
-}
-hr{
-  margin: 2.5rem 0;
+.pagenate-body .current,.pagenate-body li:hover{
+  background: #696969;
+  color: #eee;
 }
 .company-info h4{
   font-size: 0.5rem;
@@ -319,6 +290,7 @@ hr{
 }
 @media (min-width:768px) {
   #sidebar{
+    padding:0 1rem;
     background: transparent;
   }
   #sidebar .container, #content .container{
@@ -405,16 +377,6 @@ hr{
     margin-bottom: 0;
     font-size: .8rem
   }
-  .support{
-    display: flex;
-    align-items: center
-  }
-  .support i{
-    font-size: 2.5rem;
-    padding-right: 8px;
-  }
-  #customer-support .support{
-    width: auto;
-  }
+
 
 }

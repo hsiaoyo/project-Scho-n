@@ -37,28 +37,12 @@
 }
 #header_2 #header{
   padding: 30px 0;
-  text-align: center;
   color: #fff;
-}
-#header h1{
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1.4rem;
 }
 #header_2 #header a, #header_2 #header h6{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.8rem;
   color: white;
-}
-
-.breadcrumbs{
-  display: flex;
-  align-items: center;
-}
-.breadcrumbs h6{
-  margin: 0;
 }
 /* process */
 #header_2, #process, #order-confirm{
