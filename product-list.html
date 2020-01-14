@@ -14,9 +14,11 @@
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/product-list.js"></script>
 </head>
 <body>
+  <div class="modal-background"></div>
   <div id="nav">
     <div class="container-fluid">
       <div id="logo">
@@ -60,12 +62,52 @@
         <li>
           <a  href="#"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
           <a  href="#"><img class="tools" src="images/heart @1X.png" alt="like"></a>
-          <a  href="#">
+          <a  href="#" class="cart">
             <img class="tools" src="images/handbag@1X-2.png" alt="cart">
             <div class="items-num">3</div>
           </a>
         </li>
       </ul>
+      <div id="cart">
+        <div class="triangle"></div>
+        <ul>
+          <li class="row">
+            <img src="images/74x74.png" alt="img" class="col-3">
+            <div class="my-product col-7">
+              <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
+              <span class="price"><i class="icon-euro"></i>599,00</span>
+              <h6>Qty:<span class="quantity">1</span></h6>
+            </div>
+            <div class="col-2"><i class="icon-cancel"></i></div>
+          </li>
+          <li class="row">
+            <img src="images/74x74.png" alt="img" class="col-3">
+            <div class="my-product col-7">
+              <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
+              <span class="price"><i class="icon-euro"></i>599,00</span>
+              <h6>Qty:<span class="quantity">1</span></h6>
+            </div>
+            <div class="col-2"><i class="icon-cancel"></i></div>
+          </li>
+          <li class="row">
+            <img src="images/74x74.png" alt="img" class="col-3">
+            <div class="my-product col-7">
+              <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
+              <span class="price"><i class="icon-euro"></i>599,00</span>
+              <h6>Qty:<span class="quantity">1</span></h6>
+            </div>
+            <div class="col-2"><i class="icon-cancel"></i></div>
+          </li>
+        </ul>
+        <div class="amount">
+          <label>Sub Total</label>
+          <span class="total"><i class="icon-euro"></i>799,00</span>
+        </div>
+        <div class="cart-function">
+          <a href="#" class="rounded-pill">view cart</a>
+          <a href="#" class="rounded-pill dark">checkout</a>
+        </div>
+      </div>
     </div>
   </div>
   <div id="header">
