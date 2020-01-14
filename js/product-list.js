@@ -1,39 +1,41 @@
 $(document).ready(function(){
 
-  var $window = $(window),
-  $sidebar = $('#sidebar'),
-  $sidebarAfter = $sidebar.next(),
-  sidebarY = $sidebar.height(),
-  navY = $('#nav').outerHeight(true),
-  headerY = $('#header').outerHeight(true),
-  scrollY = navY + headerY
+  var $window = $(window);
+  var width = $window.width();
 
-  if($window.width() < 768) {
-      $window.on('scroll', scroll);$window.trigger('scroll');
-    };
-    function scroll(){
-      (scrollY <= $window.scrollTop())?
-        _fixed():
-        _static();
-      function _fixed(){
-        $sidebar.css({
-          'position':'fixed',
-          'top':0,
-          'left':0
-        });
-        $sidebarAfter.css('marginTop', sidebarY);
-      };
-      function _static(){
-        $sidebar.css({
-          'position': 'static',
-          'top': '',
-          'left': ''
-        });
-        $sidebarAfter.css('marginTop', 0);
-      }
-    };
+  if(width < 768){
 
+    $sidebar = $('#sidebar'),
+    $sidebarAfter = $sidebar.next(),
+    sidebarY = $sidebar.height(),
+    navY = $('#nav').outerHeight(true),
+    headerY = $('#header').outerHeight(true),
+    scrollY = navY + headerY
 
+    // $window.on('scroll', scroll);$window.trigger('scroll');
+
+     function scroll(){
+       (scrollY <= $window.scrollTop())?
+         _fixed():
+         _static();
+       function _fixed(){
+         $sidebar.css({
+           'position':'fixed',
+           'top':0,
+           'left':0
+         });
+         $sidebarAfter.css('marginTop', sidebarY);
+       };
+       function _static(){
+         $sidebar.css({
+           'position': 'static',
+           'top': '',
+           'left': ''
+         });
+         $sidebarAfter.css('marginTop', 0);
+       }
+     };
+  };
 
 
   $( "#slider-range" ).slider({
@@ -59,6 +61,19 @@ $(document).ready(function(){
 
   $('.brand-filter li').click(function(e){
     $(e.currentTarget).find('i').toggleClass('display-block')
+  });
+
+  $('.list').click(function(e){
+    $(this).parents('.show').siblings('.row').find('.product').removeClass('col-sm-6 col-lg-4').addClass('list-style');
+    $(this).parents('.show').siblings('.row').find('img').addClass('list-style');
+    $(this).parents('.show').siblings('.row').find('.stars').addClass('list-style');
+    $(this).parents('.show').siblings('.row').find('.discount-sticker').addClass('list-style');
+  });
+$('.thumbnail').click(function(e){
+    $(this).parents('.show').siblings('.row').find('.product').removeClass('list-style').addClass('col-sm-6 col-lg-4');
+    $(this).parents('.show').siblings('.row').find('img').removeClass('list-style');
+    $(this).parents('.show').siblings('.row').find('.stars').removeClass('list-style');
+    $(this).parents('.show').siblings('.row').find('.discount-sticker').removeClass('list-style');
   });
 
 });
