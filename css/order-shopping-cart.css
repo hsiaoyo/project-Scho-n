@@ -31,6 +31,12 @@
   font-size: .8rem;
   color: #2F2F2F;
 }
+#top .language a{
+  color: white;
+}
+#top .language a:hover{
+  text-decoration: underline;
+}
 #header_2 #header a, #header_2 #header h6{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.8rem;
