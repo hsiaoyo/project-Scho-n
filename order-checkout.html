@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fontello.css">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/jquery-countryselector.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/order-checkout.css">
 
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/popper.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.min.js"></script>
+  <script src="js/countrypicker.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/product-detail.js"></script>
 </head>
 <body>
   <div class="modal-background"></div>
@@ -164,11 +165,11 @@
         <div class="col-md-5 col-lg-6">
           <h2>billing details</h2>
           <form class="billing-details">
-            <select name="country" id="country">
-              <option selected="selected">Select Country</option>
-              <option value="America">America</option>
+            <select class="countrypicker" placeholder="Select Country">
+              
+              <!-- <option value="America">America</option>
               <option value="Japan">Japan</option>
-              <option value="Taiwan">Taiwan</option>
+              <option value="Taiwan">Taiwan</option> -->
             </select>
             <input type="text" name="name" placeholder="Name">
             <input type="text" name="last-name" placeholder="Last Name">
@@ -179,7 +180,7 @@
             <input type="text" name="postcode" placeholder="Postcode/Zip">
             <input type="text" name="email" placeholder="Email Address">
             <input type="text" name="phone" placeholder="Phone Number">
-            <div><input type="checkbox" checked="checked"><span>Ship to a different address?</span></div>
+            <div><input type="checkbox" checked><span>Ship to a different address?</span></div>
             <textarea name="note" name="different-address" placeholder="Order Notes"></textarea>
           </form>
         </div>
