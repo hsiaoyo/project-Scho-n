@@ -123,12 +123,12 @@
   background: #B3B3B3;
 }
 .ui-slider-horizontal .ui-slider-range {
-    background: #494949;
+  background: #494949;
 }
 .ui-state-default, .ui-widget-content .ui-state-default{
-    border: 3px solid #454545;
-    border-radius: 50%;
-    outline: none;
+  border: 3px solid #454545;
+  border-radius: 50%;
+  outline: none;
 }
 .ui-state-active, .ui-widget-content .ui-state-active{
   background: #919191;
@@ -393,9 +393,6 @@ img.list-style{
   }
 }
 
-/* @media (min-width:768px){
-
-} */
 @media (min-width:992px) {
   .hot-sale{
     height: auto;
@@ -420,5 +417,4 @@ img.list-style{
     display: block;
     height: 23px;
   } */
-
 }

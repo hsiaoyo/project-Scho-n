@@ -130,7 +130,6 @@ select {
   margin-bottom: 3rem;
 }
 /* tabs */
-
 #tabs{
   position: relative;
   padding: 0;
@@ -201,17 +200,10 @@ select {
   bottom: 30%;
   left: 15%;
 }
-
-
-
-
-
-
 .gray-background{
   padding: 20px 0;
   background: #F6F6F6;
 }
-
 .company-info h4{
   font-size: 0.5rem;
   line-height: 1.8;
@@ -246,8 +238,6 @@ select {
    margin-bottom: 0;
    width: 50%;
  }
-}
-@media (min-width:768px) {
 }
 @media (min-width:992px) {
   .col-lg-2 {

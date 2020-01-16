@@ -218,7 +218,6 @@ table.total td:last-child{
   font-family: 'Source Sans Pro', sans-serif;
   color: #010101;
 }
-
 table.total td.free-ship{
   font-size: .8rem;
 }
@@ -232,12 +231,10 @@ button.go-checkout{
   font-size: .8rem;
   color: white;
 }
-
 .gray-background{
   padding: 20px 0;
   background: #F6F6F6;
 }
-
 .company-info h4{
   font-size: 0.5rem;
   line-height: 1.8;
@@ -249,11 +246,11 @@ button.go-checkout{
   margin: 20px 0;
 }
 @media (min-width:576px){
-  #top .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+ #top .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
  #process, #my-product{
   margin-bottom: 5rem;
  }
@@ -284,8 +281,6 @@ button.go-checkout{
  #my-product th, #my-product span.product-name, #my-product td.second, #my-product td.fourth, select.quantity{
    font-size: 1rem;
  }
-
-
 }
 @media (min-width:768px) {
   #process{
