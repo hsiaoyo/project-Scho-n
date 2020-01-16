@@ -6,16 +6,13 @@
   <title>Check Out</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fontello.css">
-  <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/jquery-countryselector.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/order-checkout.css">
 
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/bootstrap-select.min.js"></script>
   <script src="js/countrypicker.js"></script>
   <script src="js/main.js"></script>
 </head>
@@ -78,9 +75,9 @@
               <a href="#">CONTACT</a>
             </li>
             <li>
-              <a  href="#"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
-              <a  href="#"><img class="tools" src="images/heart @1X.png" alt="like"></a>
-              <a  href="#" class="cart">
+              <a href="#"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
+              <a href="#"><img class="tools" src="images/heart @1X.png" alt="like"></a>
+              <a href="#" class="cart">
                 <img class="tools" src="images/handbag@1X-2.png" alt="cart">
                 <div class="items-num">3</div>
               </a>
@@ -90,36 +87,36 @@
             <div class="triangle"></div>
             <ul>
               <li class="row">
-                <img src="images/74x74.png" alt="img" class="col-3">
-                <div class="my-product col-7">
+                <img src="images/74x74.png" alt="img" class="col-sm-3">
+                <div class="my-product col-9 col-sm-7">
                   <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
-                  <span class="price"><i class="icon-euro"></i>599,00</span>
+                  <div><i class="icon-euro"></i><span class="price">599.00</span></div>
                   <h6>Qty:<span class="quantity">1</span></h6>
                 </div>
-                <div class="col-2"><i class="icon-cancel"></i></div>
+                <div class="col-3 col-sm-2 remove"><i class="icon-cancel"></i></div>
               </li>
               <li class="row">
-                <img src="images/74x74.png" alt="img" class="col-3">
-                <div class="my-product col-7">
+                <img src="images/74x74.png" alt="img" class="col-sm-3">
+                <div class="my-product col-9 col-sm-7">
                   <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
-                  <span class="price"><i class="icon-euro"></i>599,00</span>
+                  <div><i class="icon-euro"></i><span class="price">599.00</span></div>
                   <h6>Qty:<span class="quantity">1</span></h6>
                 </div>
-                <div class="col-2"><i class="icon-cancel"></i></div>
+                <div class="col-3 col-sm-2 remove"><i class="icon-cancel"></i></div>
               </li>
               <li class="row">
-                <img src="images/74x74.png" alt="img" class="col-3">
-                <div class="my-product col-7">
+                <img src="images/74x74.png" alt="img" class="col-sm-3">
+                <div class="my-product col-9 col-sm-7">
                   <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
-                  <span class="price"><i class="icon-euro"></i>599,00</span>
+                  <div><i class="icon-euro"></i><span class="price">599.00</span></div>
                   <h6>Qty:<span class="quantity">1</span></h6>
                 </div>
-                <div class="col-2"><i class="icon-cancel"></i></div>
+                <div class="col-3 col-sm-2 remove"><i class="icon-cancel"></i></div>
               </li>
             </ul>
             <div class="amount">
               <label>Sub Total</label>
-              <span class="total"><i class="icon-euro"></i>799,00</span>
+              <div><i class="icon-euro"></i><span id="subtotal">1797.00</span></div>
             </div>
             <div class="cart-function">
               <a href="#" class="rounded-pill">view cart</a>
@@ -129,15 +126,14 @@
         </div>
       </div>
     </div>
-
     <div id="header">
-        <div class="container">
-          <h1>check out</h1>
-          <div class="breadcrumbs">
-            <a href="https://hsiaoyo.github.io/project-Schon/home.html">Home</a><h6><i class="icon-angle-right"></i>Check Out</h6>
-          </div>
+      <div class="container">
+        <h1>check out</h1>
+        <div class="breadcrumbs">
+          <a href="https://hsiaoyo.github.io/project-Schon/home.html">Home</a><h6><i class="icon-angle-right"></i>Check Out</h6>
         </div>
       </div>
+    </div>
   </div>
 
   <div id="process">
@@ -166,10 +162,6 @@
           <h2>billing details</h2>
           <form class="billing-details">
             <select class="countrypicker" placeholder="Select Country">
-              
-              <!-- <option value="America">America</option>
-              <option value="Japan">Japan</option>
-              <option value="Taiwan">Taiwan</option> -->
             </select>
             <input type="text" name="name" placeholder="Name">
             <input type="text" name="last-name" placeholder="Last Name">
@@ -242,13 +234,9 @@
             <h4>I’ve read &amp; accept the <a href="#">terms &amp; conditions</a></h4>
             <input type="checkbox" checked>
           </div>
-
-
           <button class="go-checkout">proceed to chechout<i class="icon-ok"></i></button>
         </div>
       </div>
-
-
     </div>
   </div>
 
@@ -287,116 +275,114 @@
     </div>
   </div>
 
-
-
-   <div id="footer">
-     <div class="container">
-       <div class="row">
-         <div class="company-info col-lg-3">
-           <img src="images/CompositeLayer@1X.png" alt="logo">
-           <h4>Exercitation ullamco laboris nisi ut aliquip ex commodo consequat Duis aute irure</h4>
-           <div class="info map">
-             <i class="icon-location"></i>
-             <a href="#">Connaugt Road Central Suite 18B, 148 New Yankee</a>
-           </div>
-           <div class="info">
-             <i class="icon-phone"></i><a href="tel:+1-(555)-333-22-11">+1 (555) 333 22 11</a>
-           </div>
-           <div class="info">
-             <i class="icon-mail"></i><a href="mailto:info@schon.chair">info@schon.chair</a>
-           </div>
+  <div id="footer">
+   <div class="container">
+     <div class="row">
+       <div class="company-info col-lg-3">
+         <img src="images/CompositeLayer@1X.png" alt="logo">
+         <h4>Exercitation ullamco laboris nisi ut aliquip ex commodo consequat Duis aute irure</h4>
+         <div class="info map">
+           <i class="icon-location"></i>
+           <a href="#">Connaugt Road Central Suite 18B, 148 New Yankee</a>
          </div>
-         <div class="learn-more only-title">
-           <button class="btn d-block" type="button" data-toggle="collapse" data-target="#categories" aria-expanded="false" aria-controls="collapseExample">
-             Categories
-           </button>
-             <ul class="list" id="categories">
-               <li><a href="#">Chairs</a></li>
-               <li><a href="#">Sofas</a></li>
-               <li><a href="#">Living</a></li>
-               <li><a href="#">Bedroom</a></li>
-               <li><a href="#">Tables</a></li>
-               <li><a href="#">New</a></li>
-             </ul>
-           <button class="btn d-block" type="button" data-toggle="collapse" data-target="#information" aria-expanded="false" aria-controls="collapseExample">
-             Information
-           </button>
-           <div class="collapse" id="information">
-             <ul class="list">
-               <li> <a href="#">About Us</a></li>
-               <li><a href="#">Contact Us</a></li>
-               <li><a href="#">Terms&amp;Condition</a></li>
-               <li><a href="#">Privacy Policy</a></li>
-               <li><a href="#">Customer Service</a></li>
-               <li><a href="#">FAQs</a></li>
-             </ul>
-           </div>
-           <button class="btn d-block" type="button" data-toggle="collapse" data-target="#account" aria-expanded="false" aria-controls="collapseExample">
-             Account
-           </button>
-           <div class="collapse" id="account">
-             <ul class="list">
+         <div class="info">
+           <i class="icon-phone"></i><a href="tel:+1-(555)-333-22-11">+1 (555) 333 22 11</a>
+         </div>
+         <div class="info">
+           <i class="icon-mail"></i><a href="mailto:info@schon.chair">info@schon.chair</a>
+         </div>
+       </div>
+       <div class="learn-more only-title">
+         <button class="btn d-block" type="button" data-toggle="collapse" data-target="#categories" aria-expanded="false" aria-controls="collapseExample">
+           Categories
+         </button>
+           <ul class="list" id="categories">
+             <li><a href="#">Chairs</a></li>
+             <li><a href="#">Sofas</a></li>
+             <li><a href="#">Living</a></li>
+             <li><a href="#">Bedroom</a></li>
+             <li><a href="#">Tables</a></li>
+             <li><a href="#">New</a></li>
+           </ul>
+         <button class="btn d-block" type="button" data-toggle="collapse" data-target="#information" aria-expanded="false" aria-controls="collapseExample">
+           Information
+         </button>
+         <div class="collapse" id="information">
+           <ul class="list">
+             <li> <a href="#">About Us</a></li>
+             <li><a href="#">Contact Us</a></li>
+             <li><a href="#">Terms&amp;Condition</a></li>
+             <li><a href="#">Privacy Policy</a></li>
+             <li><a href="#">Customer Service</a></li>
+             <li><a href="#">FAQs</a></li>
+           </ul>
+         </div>
+         <button class="btn d-block" type="button" data-toggle="collapse" data-target="#account" aria-expanded="false" aria-controls="collapseExample">
+           Account
+         </button>
+         <div class="collapse" id="account">
+           <ul class="list">
+             <li> <a href="#">My Acount</a></li>
+             <li><a href="#">Order Tracking</a></li>
+             <li><a href="#">Wish List</a></li>
+             <li><a href="#">Shopping Cart</a></li>
+             <li><a href="#">Checkout</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="learn-more whole row col-lg-6">
+         <div class="col-md-4">
+           <h3>Categories</h3>
+           <ul>
+             <li><a href="#">Chairs</a></li>
+             <li><a href="#">Sofas</a></li>
+             <li><a href="#">Living</a></li>
+             <li><a href="#">Bedroom</a></li>
+             <li><a href="#">Tables</a></li>
+             <li><a href="#">New</a></li>
+           </ul>
+         </div>
+         <div class="col-md-4">
+           <h3>Information</h3>
+           <ul>
+             <li> <a href="#">About Us</a></li>
+             <li><a href="#">Contact Us</a></li>
+             <li><a href="#">Terms&amp;Condition</a></li>
+             <li><a href="#">Privacy Policy</a></li>
+             <li><a href="#">Customer Service</a></li>
+             <li><a href="#">FAQs</a></li>
+           </ul>
+         </div>
+         <div class="col-md-4">
+           <h3>Account</h3>
+             <ul>
                <li> <a href="#">My Acount</a></li>
                <li><a href="#">Order Tracking</a></li>
                <li><a href="#">Wish List</a></li>
                <li><a href="#">Shopping Cart</a></li>
                <li><a href="#">Checkout</a></li>
              </ul>
-           </div>
          </div>
-         <div class="learn-more whole row col-lg-6">
-           <div class="col-md-4">
-             <h3>Categories</h3>
-             <ul>
-               <li><a href="#">Chairs</a></li>
-               <li><a href="#">Sofas</a></li>
-               <li><a href="#">Living</a></li>
-               <li><a href="#">Bedroom</a></li>
-               <li><a href="#">Tables</a></li>
-               <li><a href="#">New</a></li>
-             </ul>
-           </div>
-           <div class="col-md-4">
-             <h3>Information</h3>
-             <ul>
-               <li> <a href="#">About Us</a></li>
-               <li><a href="#">Contact Us</a></li>
-               <li><a href="#">Terms&amp;Condition</a></li>
-               <li><a href="#">Privacy Policy</a></li>
-               <li><a href="#">Customer Service</a></li>
-               <li><a href="#">FAQs</a></li>
-             </ul>
-           </div>
-           <div class="col-md-4">
-             <h3>Account</h3>
-               <ul>
-                 <li> <a href="#">My Acount</a></li>
-                 <li><a href="#">Order Tracking</a></li>
-                 <li><a href="#">Wish List</a></li>
-                 <li><a href="#">Shopping Cart</a></li>
-                 <li><a href="#">Checkout</a></li>
-               </ul>
-           </div>
-         </div>
-         <div class="get-more-info col-lg-3">
-           <h4>Sing Up Newsletter</h4>
-           <h5>Subscribe now to get 15% off on any product</h5>
-           <div class="rounded-pill d-inline-block" contenteditable="true">Your Email <i class="icon-angle-right float-right"></i></div>
-           <div class="follow">
-             <h4>Follow Us</h4>
-             <ul class="social-media clearfix list-inline">
-               <li class="list-inline-item"><a href="#"><i class="icon-twitter"></i></a></li>
-               <li class="list-inline-item"><a href="#"><i class="icon-facebook"></i></a></li>
-               <li class="list-inline-item"><a href="#"><i class="icon-gplus"></i></a></li>
-               <li class="list-inline-item"><a href="#"><i class="icon-youtube"></i></a></li>
-               <li class="list-inline-item"><a href="#"><i class="icon-linkedin"></i></a></li>
-               <li class="list-inline-item"><a href="#"><i class="icon-whatsapp"></i></a></li>
-             </ul>
-           </div>
+       </div>
+       <div class="get-more-info col-lg-3">
+         <h4>Sing Up Newsletter</h4>
+         <h5>Subscribe now to get 15% off on any product</h5>
+         <div class="rounded-pill d-inline-block" contenteditable="true">Your Email <i class="icon-angle-right float-right"></i></div>
+         <div class="follow">
+           <h4>Follow Us</h4>
+           <ul class="social-media clearfix list-inline">
+             <li class="list-inline-item"><a href="#"><i class="icon-twitter"></i></a></li>
+             <li class="list-inline-item"><a href="#"><i class="icon-facebook"></i></a></li>
+             <li class="list-inline-item"><a href="#"><i class="icon-gplus"></i></a></li>
+             <li class="list-inline-item"><a href="#"><i class="icon-youtube"></i></a></li>
+             <li class="list-inline-item"><a href="#"><i class="icon-linkedin"></i></a></li>
+             <li class="list-inline-item"><a href="#"><i class="icon-whatsapp"></i></a></li>
+           </ul>
          </div>
        </div>
      </div>
    </div>
+ </div>
 
    <div id="buttom">
      <div class="container clearfix">
