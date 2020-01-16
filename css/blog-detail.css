@@ -14,23 +14,7 @@ a:hover{
   color: #494949;
 }
 #header{
-  margin: 30px 0 0;
-  background: #F4F4F4;
-  text-align: center;
-  color: #494949;
-}
-#header .container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 23vh;
-}
-#header h1{
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1.4rem;
+  margin-bottom: 0;
 }
 #header-tools{
   background: #EEEEEE;
@@ -40,10 +24,6 @@ a:hover{
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-}
-.breadcrumbs{
-  display: flex;
-  align-items: center;
 }
 .breadcrumbs a, .breadcrumbs h6, .display-mode i, .search h6{
   margin: 0;
