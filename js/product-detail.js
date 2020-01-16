@@ -14,26 +14,10 @@ $(document).ready(function(){
      }
   });
 
-  $( '#spinner' ).spinner();
-
-  $('.plus').click(function(e){
-    $(e.currentTarget).siblings('.ui-spinner').find('.ui-spinner-up').click();
-  });
-  // $('.slider-img img').click(function(e){
-  //   var imgFile = $(e.currentTarget).attr('src');
-  //
-  //   $(e.currentTarget).parent().siblings().attr('src', 'imgFile');
-  //
-  // });
-
-
   $('.tabs li').click(function(e){
-
-   var index = $(e.currentTarget).index();
-   $('.tabs li').removeClass('active').eq(index).addClass('active');
-   $('.content').removeClass('active').eq(index).addClass('active');
-
- });
-
+    var index = $(e.currentTarget).index();
+    $('.tabs li').removeClass('active').eq(index).addClass('active');
+    $('.content').removeClass('active').eq(index).addClass('active');
+  });
 
 });
