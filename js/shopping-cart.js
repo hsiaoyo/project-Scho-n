@@ -7,14 +7,13 @@ $(document).ready(function(){
     }
   });
 
-  // $('.quantity').on('click', 'option', function(e){
-  //   var quantity = $(e.currentTarget).attr('value');
-  //   var unitPrice = $(e.currentTarget).closest('td').sibilngs('.unit-price').html().praseFloat();
-  //   $(this).closest('td').sibilngs('.total-amount').html(quantity*unitPrice);
-  // });
-  // 選擇數量
-  // 讀出option中的value
-  // 找到unit-price
-  // 找到total-amount
-  // total-amount=unit-price*value
+  $('.quantity').change(function(){
+    var quantity = $(this).val();
+    var unitPrice = $(this).closest('td').siblings('.second').find('.unit-price').text();
+    unitPrice = Number(unitPrice);
+    totalPrice = quantity * unitPrice;
+    totalPrice = totalPrice.toFixed(2);
+    $(this).closest('td').siblings('.fourth').find('.total-amount').text(totalPrice);
+  });
+
 });
