@@ -1,41 +1,109 @@
 $(document).ready(function(){
 
+
   var $window = $(window);
-  var width = $window.width();
 
-  if(width < 768){
+  // var width = $window.width();
+  $sidebar = $('#sidebar'),
+  $sidebarAfter = $sidebar.next(),
+  sidebarY = $sidebar.height(),
+  navY = $('#nav').outerHeight(true),
+  headerY = $('#header').outerHeight(true),
+  scrollY = navY + headerY
 
-    $sidebar = $('#sidebar'),
-    $sidebarAfter = $sidebar.next(),
-    sidebarY = $sidebar.height(),
-    navY = $('#nav').outerHeight(true),
-    headerY = $('#header').outerHeight(true),
-    scrollY = navY + headerY
+  $(window).resize(function() {
+    var wdth=$(window).width();
+    if (wdth < 768){
+      $window.on('scroll', scroll);
+      $window.trigger('scroll');
+    };
+  });
+// 取得原始寬度
 
-    // $window.on('scroll', scroll);$window.trigger('scroll');
+// resize時得到寬度
 
-     function scroll(){
-       (scrollY <= $window.scrollTop())?
-         _fixed():
-         _static();
-       function _fixed(){
-         $sidebar.css({
-           'position':'fixed',
-           'top':0,
-           'left':0
-         });
-         $sidebarAfter.css('marginTop', sidebarY);
-       };
-       function _static(){
-         $sidebar.css({
-           'position': 'static',
-           'top': '',
-           'left': ''
-         });
-         $sidebarAfter.css('marginTop', 0);
-       }
-     };
+// 寬度小於768執行scroll
+
+function initialize(){
+  if (width < 768){
+
+    $window.on('scroll', scroll);
+    $window.trigger('scroll');
   };
+};
+
+
+   function scroll(){
+     (scrollY <= $window.scrollTop())?
+       _fixed():
+       _static();
+     function _fixed(){
+       $sidebar.css({
+         'position':'fixed',
+         'top':0,
+         'left':0
+       });
+       $sidebarAfter.css('marginTop', sidebarY);
+     };
+     function _static(){
+       $sidebar.css({
+         'position': 'static',
+         'top': '',
+         'left': ''
+       });
+       $sidebarAfter.css('marginTop', 0);
+     }
+   };
+
+
+// initialize();
+
+
+
+
+// function initialize(){
+//   $sidebar = $('#sidebar'),
+//   $sidebarAfter = $sidebar.next(),
+//   sidebarY = $sidebar.height(),
+//   navY = $('#nav').outerHeight(true),
+//   headerY = $('#header').outerHeight(true),
+//   scrollY = navY + headerY
+//
+//   // $window.resize(function() {
+//   //   var width = ＄window.width();
+//   //  });
+//
+//   if (width < 768){
+//     $window.on('scroll', scroll);
+//     $window.trigger('scroll');
+//   }
+//
+//    function scroll(){
+//      (scrollY <= $window.scrollTop())?
+//        _fixed():
+//        _static();
+//      function _fixed(){
+//        $sidebar.css({
+//          'position':'fixed',
+//          'top':0,
+//          'left':0
+//        });
+//        $sidebarAfter.css('marginTop', sidebarY);
+//      };
+//      function _static(){
+//        $sidebar.css({
+//          'position': 'static',
+//          'top': '',
+//          'left': ''
+//        });
+//        $sidebarAfter.css('marginTop', 0);
+//      }
+//    };
+// };
+
+
+
+
 
 
   $( "#slider-range" ).slider({
@@ -69,7 +137,7 @@ $(document).ready(function(){
     $(this).parents('.show').siblings('.row').find('.stars').addClass('list-style');
     $(this).parents('.show').siblings('.row').find('.discount-sticker').addClass('list-style');
   });
-$('.thumbnail').click(function(e){
+  $('.thumbnail').click(function(e){
     $(this).parents('.show').siblings('.row').find('.product').removeClass('list-style').addClass('col-sm-6 col-lg-4');
     $(this).parents('.show').siblings('.row').find('img').removeClass('list-style');
     $(this).parents('.show').siblings('.row').find('.stars').removeClass('list-style');
