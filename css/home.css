@@ -86,9 +86,6 @@ i.icon-star, i.icon-star-empty{
   padding: 10px;
   position: relative;
 }
-#logo img{
-  width: 30%;
-}
 ul.navbar{
   top: 80%;
   height: 66vh;
@@ -107,6 +104,7 @@ ul.navbar{
   align-items: center;
 }
 .shop-bag div h4,.shop-bag div h6{
+  display: none;
   margin-bottom: 0;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
@@ -153,7 +151,7 @@ ul.navbar{
 }
 .intro_1{
   width: 75%;
-  z-index: 99;
+  z-index: 90;
 }
 .intro_1 h4, .second h4, .fourth h4{
   letter-spacing: 2px;
@@ -564,6 +562,15 @@ hr{
   color: #fff;
 }
 @media (min-width:576px) {
+  .shop-bag div h4,.shop-bag div h6{
+    display: block;
+  }
+  .user-tool a, .user-tool div{
+    padding-left: 1rem;
+  }
+  .user-tool a.shop-bag div{
+    padding-left: 0;
+  }
   .the-third{
     display: flex;
     flex-direction: row-reverse;
@@ -598,18 +605,24 @@ hr{
   #nav ul.navbar{
     position: static;
   }
-  #logo{
-    margin: 10px 0;
-  }
   #logo img{
-    width: 15%;
+    width: 80%;
   }
   .nav{
     justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
   }
   .user-tool{
-    margin: 0;
     width: auto;
+    margin: 0;
+  }
+  .user-tool a, .user-tool div{
+    padding-left: .5rem;
+  }
+  #cart .triangle {
+    top: -5px;
+    right: 58px;
   }
   .product.first, .product.second{
     padding: 40px;
