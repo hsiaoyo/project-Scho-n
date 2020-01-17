@@ -2,8 +2,7 @@ $(document).ready(function(){
 
 
   var $window = $(window);
-
-  // var width = $window.width();
+  var width = $window.width();
   $sidebar = $('#sidebar'),
   $sidebarAfter = $sidebar.next(),
   sidebarY = $sidebar.height(),
@@ -11,29 +10,30 @@ $(document).ready(function(){
   headerY = $('#header').outerHeight(true),
   scrollY = navY + headerY
 
-  $(window).resize(function() {
-    var wdth=$(window).width();
-    if (wdth < 768){
-      $window.on('scroll', scroll);
-      $window.trigger('scroll');
-    };
-  });
-// 取得原始寬度
 
-// resize時得到寬度
-
-// 寬度小於768執行scroll
-
-function initialize(){
-  if (width < 768){
-
-    $window.on('scroll', scroll);
-    $window.trigger('scroll');
-  };
-};
+//  原始寬度小於768，執行scroll finished
+//   if (width < 768){
+//     $window.on('scroll', scroll);
+//     $window.trigger('scroll');
+//   };
+//
+// //resize後移除scroll
+// $window.resize(function(){
+//   var newWidth = $window.width();
+//
+//   $(this).off('scroll', scroll);
+//    若寬度小於768，執行scroll
+//   if(newWidth<768){
+//     $(this).on('scroll', scroll);
+//     $(this).trigger('scroll');
+//   }
+// });
 
 
-   function scroll(){
+
+
+
+  function scroll(){
      (scrollY <= $window.scrollTop())?
        _fixed():
        _static();
@@ -54,56 +54,6 @@ function initialize(){
        $sidebarAfter.css('marginTop', 0);
      }
    };
-
-
-// initialize();
-
-
-
-
-// function initialize(){
-//   $sidebar = $('#sidebar'),
-//   $sidebarAfter = $sidebar.next(),
-//   sidebarY = $sidebar.height(),
-//   navY = $('#nav').outerHeight(true),
-//   headerY = $('#header').outerHeight(true),
-//   scrollY = navY + headerY
-//
-//   // $window.resize(function() {
-//   //   var width = ＄window.width();
-//   //  });
-//
-//   if (width < 768){
-//     $window.on('scroll', scroll);
-//     $window.trigger('scroll');
-//   }
-//
-//    function scroll(){
-//      (scrollY <= $window.scrollTop())?
-//        _fixed():
-//        _static();
-//      function _fixed(){
-//        $sidebar.css({
-//          'position':'fixed',
-//          'top':0,
-//          'left':0
-//        });
-//        $sidebarAfter.css('marginTop', sidebarY);
-//      };
-//      function _static(){
-//        $sidebar.css({
-//          'position': 'static',
-//          'top': '',
-//          'left': ''
-//        });
-//        $sidebarAfter.css('marginTop', 0);
-//      }
-//    };
-// };
-
-
-
-
 
 
   $( "#slider-range" ).slider({
