@@ -3,11 +3,5 @@ $(document).ready(function(){
     $(e.currentTarget).parent().siblings('ul').toggleClass('display-block');
   });
 
-  // $('.thumbnail').hover(function(e){
-  //   $(e.currentTarget).find('.add').fadeToggle();
-  // });
-  //
-  // $('.thumbnail').hover(function(e){
-  //   $(e.currentTarget).find('.browse').fadeToggle();
-  // })
+
 })
