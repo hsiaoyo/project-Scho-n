@@ -6,17 +6,19 @@
   <title>About Us</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/aboutus.css">
 
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/aboutus.js"></script>
+  <script src="js/main.js"></script>
 
 </head>
 <body>
+  <div class="modal-background"></div>
   <div id="nav">
-    <div class="container-fluid">
+    <div class="container">
       <div id="logo">
         <a href="#"><img src="images/logo.png" alt="logo"></a>
         <a href="tel:+1(555)333-22-11">+1(555)333 22 11</a>
@@ -28,7 +30,7 @@
       </div>
       <ul class="navbar">
         <li>
-          <a href="#">HOME</a>
+          <a href="https://hsiaoyo.github.io/project-Schon/home.html">HOME</a>
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,31 +49,71 @@
           </div>
         </li>
         <li>
-          <a href="#">ABOUT</a>
+          <a href="https://hsiaoyo.github.io/project-Schon/aboutus.html">ABOUT</a>
         </li>
         <li>
-          <a href="#">BLOG</a>
+          <a href="https://hsiaoyo.github.io/project-Schon/blog.html">BLOG</a>
         </li>
         <li>
-          <a href="#">CONTACT</a>
+          <a href="https://hsiaoyo.github.io/project-Schon/contact.html">CONTACT</a>
         </li>
         <li>
           <a  href="#"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
           <a  href="#"><img class="tools" src="images/heart @1X.png" alt="like"></a>
-          <a  href="#">
+          <a  href="#" class="cart">
             <img class="tools" src="images/handbag@1X-2.png" alt="cart">
             <div class="items-num">3</div>
           </a>
         </li>
       </ul>
+      <div id="cart">
+        <div class="triangle"></div>
+        <ul>
+          <li class="row">
+            <img src="images/74x74.png" alt="img" class="col-sm-3">
+            <div class="my-product col-9 col-sm-7">
+              <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
+              <div><i class="icon-euro"></i><span class="price">599.00</span></div>
+              <h6>Qty:<span class="quantity">1</span></h6>
+            </div>
+            <div class="col-3 col-sm-2 remove"><i class="icon-cancel"></i></div>
+          </li>
+          <li class="row">
+            <img src="images/74x74.png" alt="img" class="col-sm-3">
+            <div class="my-product col-9 col-sm-7">
+              <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
+              <div><i class="icon-euro"></i><span class="price">599.00</span></div>
+              <h6>Qty:<span class="quantity">1</span></h6>
+            </div>
+            <div class="col-3 col-sm-2 remove"><i class="icon-cancel"></i></div>
+          </li>
+          <li class="row">
+            <img src="images/74x74.png" alt="img" class="col-sm-3">
+            <div class="my-product col-9 col-sm-7">
+              <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
+              <div><i class="icon-euro"></i><span class="price">599.00</span></div>
+              <h6>Qty:<span class="quantity">1</span></h6>
+            </div>
+            <div class="col-3 col-sm-2 remove"><i class="icon-cancel"></i></div>
+          </li>
+        </ul>
+        <div class="amount">
+          <label>Sub Total</label>
+          <div><i class="icon-euro"></i><span id="subtotal">1797.00</span></div>
+        </div>
+        <div class="cart-function">
+          <a href="https://hsiaoyo.github.io/project-Schon/order-shopping-cart.html" class="rounded-pill">view cart</a>
+          <a href="https://hsiaoyo.github.io/project-Schon/order-checkout.html" class="rounded-pill dark">checkout</a>
+        </div>
+      </div>
     </div>
   </div>
 
   <div id="header">
-    <div class="container-fluid">
+    <div class="container">
       <h1>about us</h1>
       <div class="breadcrumbs">
-        <a href="#">Home</a><h6><i class="icon-angle-right"></i> About Us</h6>
+        <a href="https://hsiaoyo.github.io/project-Schon/home.html">Home</a><h6><i class="icon-angle-right"></i> About Us</h6>
       </div>
     </div>
   </div>
@@ -236,7 +278,7 @@
             Categories
           </button>
             <ul class="list" id="categories">
-              <li><a href="#">Chairs</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/product-list.html">Chairs</a></li>
               <li><a href="#">Sofas</a></li>
               <li><a href="#">Living</a></li>
               <li><a href="#">Bedroom</a></li>
@@ -248,8 +290,8 @@
           </button>
           <div class="collapse" id="information">
             <ul class="list">
-              <li> <a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/aboutus.html">About Us</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/contact.html">Contact Us</a></li>
               <li><a href="#">Terms&amp;Condition</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Customer Service</a></li>
@@ -264,8 +306,8 @@
               <li> <a href="#">My Acount</a></li>
               <li><a href="#">Order Tracking</a></li>
               <li><a href="#">Wish List</a></li>
-              <li><a href="#">Shopping Cart</a></li>
-              <li><a href="#">Checkout</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/order-shopping-cart.html">Shopping Cart</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/order-checkout.html">Checkout</a></li>
             </ul>
           </div>
         </div>
@@ -273,7 +315,7 @@
           <div class="col-md-4">
             <h3>Categories</h3>
             <ul>
-              <li><a href="#">Chairs</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/product-list.html">Chairs</a></li>
               <li><a href="#">Sofas</a></li>
               <li><a href="#">Living</a></li>
               <li><a href="#">Bedroom</a></li>
@@ -284,8 +326,8 @@
           <div class="col-md-4">
             <h3>Information</h3>
             <ul>
-              <li> <a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/aboutus.html">About Us</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/contact.html">Contact Us</a></li>
               <li><a href="#">Terms&amp;Condition</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Customer Service</a></li>
@@ -298,8 +340,8 @@
                 <li> <a href="#">My Acount</a></li>
                 <li><a href="#">Order Tracking</a></li>
                 <li><a href="#">Wish List</a></li>
-                <li><a href="#">Shopping Cart</a></li>
-                <li><a href="#">Checkout</a></li>
+                <li><a href="https://hsiaoyo.github.io/project-Schon/order-shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="https://hsiaoyo.github.io/project-Schon/order-checkout.html">Checkout</a></li>
               </ul>
           </div>
         </div>

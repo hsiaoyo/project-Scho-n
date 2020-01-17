@@ -12,11 +12,12 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/aboutus.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
+  <div class="modal-background"></div>
   <div id="nav">
-    <div class="container-fluid">
+    <div class="container">
       <div id="logo">
         <a href="#"><img src="images/logo.png" alt="logo"></a>
         <a href="tel:+1(555)333-22-11">+1(555)333 22 11</a>
@@ -50,7 +51,7 @@
           <a href="https://hsiaoyo.github.io/project-Schon/aboutus.html">ABOUT</a>
         </li>
         <li>
-          <a href="#">BLOG</a>
+          <a href="https://hsiaoyo.github.io/project-Schon/blog.html">BLOG</a>
         </li>
         <li>
           <a href="https://hsiaoyo.github.io/project-Schon/contact.html">CONTACT</a>
@@ -58,7 +59,7 @@
         <li>
           <a  href="#"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
           <a  href="#"><img class="tools" src="images/heart @1X.png" alt="like"></a>
-          <a  href="#">
+          <a  href="#" class="cart">
             <img class="tools" src="images/handbag@1X-2.png" alt="cart">
             <div class="items-num">3</div>
           </a>
@@ -69,6 +70,46 @@
           </a>
         </li>
       </ul>
+      <div id="cart">
+        <div class="triangle"></div>
+        <ul>
+          <li class="row">
+            <img src="images/74x74.png" alt="img" class="col-sm-3">
+            <div class="my-product col-9 col-sm-7">
+              <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
+              <div><i class="icon-euro"></i><span class="price">599.00</span></div>
+              <h6>Qty:<span class="quantity">1</span></h6>
+            </div>
+            <div class="col-3 col-sm-2 remove"><i class="icon-cancel"></i></div>
+          </li>
+          <li class="row">
+            <img src="images/74x74.png" alt="img" class="col-sm-3">
+            <div class="my-product col-9 col-sm-7">
+              <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
+              <div><i class="icon-euro"></i><span class="price">599.00</span></div>
+              <h6>Qty:<span class="quantity">1</span></h6>
+            </div>
+            <div class="col-3 col-sm-2 remove"><i class="icon-cancel"></i></div>
+          </li>
+          <li class="row">
+            <img src="images/74x74.png" alt="img" class="col-sm-3">
+            <div class="my-product col-9 col-sm-7">
+              <a href="#" class="product-name">Marvelous Modern 3 Seater</a>
+              <div><i class="icon-euro"></i><span class="price">599.00</span></div>
+              <h6>Qty:<span class="quantity">1</span></h6>
+            </div>
+            <div class="col-3 col-sm-2 remove"><i class="icon-cancel"></i></div>
+          </li>
+        </ul>
+        <div class="amount">
+          <label>Sub Total</label>
+          <div><i class="icon-euro"></i><span id="subtotal">1797.00</span></div>
+        </div>
+        <div class="cart-function">
+          <a href="https://hsiaoyo.github.io/project-Schon/order-shopping-cart.html" class="rounded-pill">view cart</a>
+          <a href="https://hsiaoyo.github.io/project-Schon/order-checkout.html" class="rounded-pill dark">checkout</a>
+        </div>
+      </div>
     </div>
   </div>
   <div id="header">
@@ -94,7 +135,35 @@
                   </div>
                 </div>
                 <div class="summary col-sm-10">
-                  <h2 class="title">ideas for living rooms</h2>
+                  <a href="https://hsiaoyo.github.io/project-Schon/blog-detail.html"><h2 class="title">ideas for living rooms</h2></a>
+                  <div class="post-info">
+                    <div>
+                      <i class="icon-clock"></i><i class="date pr-1">20</i><i class="month pr-1">April</i><i class="year">2015</i>
+                    </div>
+                    <div>
+                      <i class="icon-list"></i><i>Design</i>
+                    </div>
+                    <div>
+                      <i class="icon-comment"></i><i class="comment-num pr-1">2</i><i>Comments</i>
+                    </div>
+                  </div>
+                  <p>Fusce mattis nunc lacus, vulputate facilisis dui efficitur ut. Vestibulum sit amet metus euismod, condimentum lectus id, ultrices sem. Morbi in erat malesuada, sollicitudin massa at, tristique nisl. Maecenas id eros scelerisque, vulputate tortor quis, efficitur arcu</p>
+                  <a href="https://hsiaoyo.github.io/project-Schon/blog-detail.html">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <img src="images/size@1X.png" alt="img">
+            <div class="article">
+              <div class="row">
+                <div class="dates col-sm-2">
+                  <div class="date-block">
+                    <span class="date">25</span><span class="month">April</span>
+                  </div>
+                </div>
+                <div class="summary col-sm-10">
+                  <a href="https://hsiaoyo.github.io/project-Schon/blog-detail.html"><h2 class="title">ideas for living rooms</h2></a>
                   <div class="post-info">
                     <div>
                       <i class="icon-clock"></i><i class="date pr-1">20</i><i class="month pr-1">April</i><i class="year">2015</i>
@@ -123,36 +192,7 @@
                   </div>
                 </div>
                 <div class="summary col-sm-10">
-                  <h2 class="title">ideas for living rooms</h2>
-                  <div class="post-info">
-                    <div>
-                      <i class="icon-clock"></i><i class="date pr-1">20</i><i class="month pr-1">April</i><i class="year">2015</i>
-                    </div>
-                    <div>
-                      <i class="icon-list"></i><i>Design</i>
-                    </div>
-                    <div>
-                      <i class="icon-comment"></i><i class="comment-num pr-1">2</i><i>Comments</i>
-                    </div>
-
-                  </div>
-                  <p>Fusce mattis nunc lacus, vulputate facilisis dui efficitur ut. Vestibulum sit amet metus euismod, condimentum lectus id, ultrices sem. Morbi in erat malesuada, sollicitudin massa at, tristique nisl. Maecenas id eros scelerisque, vulputate tortor quis, efficitur arcu</p>
-                  <a href="https://hsiaoyo.github.io/project-Schon/blog-detail.html">read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <img src="images/size@1X.png" alt="img">
-            <div class="article">
-              <div class="row">
-                <div class="dates col-sm-2">
-                  <div class="date-block">
-                    <span class="date">25</span><span class="month">April</span>
-                  </div>
-                </div>
-                <div class="summary col-sm-10">
-                  <h2 class="title">ideas for living rooms</h2>
+                  <a href="https://hsiaoyo.github.io/project-Schon/blog-detail.html"><h2 class="title">ideas for living rooms</h2></a>
                   <div class="post-info">
                     <div>
                       <i class="icon-clock"></i><i class="date pr-1">20</i><i class="month pr-1">April</i><i class="year">2015</i>
@@ -270,7 +310,7 @@
           </button>
             <ul class="list" id="products">
               <li><a href="#">All</a></li>
-              <li><a href="#">Chairs</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/product-list.html">Chairs</a></li>
               <li><a href="#">Sofas</a></li>
               <li><a href="#">Living</a></li>
               <li><a href="#">Bedroom</a></li>
@@ -316,7 +356,7 @@
             <h3>Products</h3>
             <ul>
               <li><a href="#">All</a></li>
-              <li><a href="#">Chairs</a></li>
+              <li><a href="https://hsiaoyo.github.io/project-Schon/product-list.html">Chairs</a></li>
               <li><a href="#">Sofas</a></li>
               <li><a href="#">Living</a></li>
               <li><a href="#">Bedroom</a></li>
@@ -345,7 +385,7 @@
           <div class="col-md-3">
             <h3>Social</h3>
               <ul>
-                <li> <a href="#">twitter</a></li>
+                <li><a href="#">twitter</a></li>
                 <li><a href="#">facebook</a></li>
                 <li><a href="#">google+</a></li>
                 <li><a href="#">pinterest</a></li>
