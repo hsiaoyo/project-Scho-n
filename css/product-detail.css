@@ -119,6 +119,7 @@ select {
 .add-action button{
   padding: .5rem 1.5rem;
   background: #F46060;
+  border: 0px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
