@@ -3,10 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 i.icon-star, i.icon-star-empty{
   font-size: 10px;
   color: #C8A760;
+}
+.owl-theme .owl-nav {
+  display: none;
+}
+.owl-theme .owl-dots .owl-dot{
+  outline: none;
 }
 .cover{
   position: absolute;
@@ -326,9 +331,6 @@ h2.price span{
 }
 .switch{
   margin: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .switch li a{
   text-transform: uppercase;
@@ -346,28 +348,6 @@ h2.price span{
 }
 .switch li:last-child a:after{
   content:"";
-}
-.control{
-  display:none;
-  position: relative;
-  width: 72px;
-  height: 38px;
-  background: #eee;
-}
-.controller{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  top:10%;
-  background: #ffffff;
-  text-align: center;
-}
-.controller.left{
-  left:5%;
-}
-.controller.right{
-  right:5%
 }
 .feature{
   position: relative;
@@ -491,11 +471,11 @@ h2.price span{
   flex-direction: column;
   align-items: flex-start;
 }
-.featured:nth-child(2) h4:before, .featured:last-child h4:before{
+/* .featured:nth-child(2) h4:before, .featured:last-child h4:before{
   content:"";
   display: block;
   height: 23px;
-}
+} */
 #brands{
   margin: 30px 0;
 }
@@ -587,6 +567,27 @@ hr{
   }
   .intro_5 h4 {
     margin-bottom: 0.5rem;
+  }
+  .owl-theme .owl-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -17%;
+    right: 0;
+    width: 72px;
+    height: 38px;
+    background: #eee;
+    border-radius: 50rem;
+  }
+  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    text-align: center;
+    margin: 0;
+    outline: none;
   }
   .control{
     display: block;
