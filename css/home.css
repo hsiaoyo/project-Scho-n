@@ -239,8 +239,14 @@ h2.price span{
 .shop.dark{
   color: #2D4169;
 }
+.shop.dark:hover{
+  color: #7589b1;
+}
 .shop.gray{
   color: #979797;
+}
+.shop.gray:hover{
+  color: #000;
 }
 .other .shop{
   position: absolute;
@@ -268,6 +274,9 @@ h2.price span{
   text-transform: uppercase;
   font-size: 0.5rem;
   color: #FFFFFF;
+}
+.shop-black:hover{
+  background: #fff;
 }
 .intro_3{
   position: absolute;
