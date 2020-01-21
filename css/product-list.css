@@ -325,6 +325,7 @@ img.list-style{
 }
 @media (min-width:768px) {
   #sidebar{
+    position: static !important;
     padding:0 1rem;
     background: transparent;
   }
