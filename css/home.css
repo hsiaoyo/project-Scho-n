@@ -480,11 +480,7 @@ h2.price span{
   flex-direction: column;
   align-items: flex-start;
 }
-/* .featured:nth-child(2) h4:before, .featured:last-child h4:before{
-  content:"";
-  display: block;
-  height: 23px;
-} */
+
 #brands{
   margin: 30px 0;
 }
@@ -577,6 +573,11 @@ hr{
   .intro_5 h4 {
     margin-bottom: 0.5rem;
   }
+  .featured.no-stars h4:before{
+    content:"";
+    display: block;
+    height: 23px;
+  }
   .owl-theme .owl-nav {
     display: flex;
     justify-content: space-around;
@@ -597,9 +598,6 @@ hr{
     text-align: center;
     margin: 0;
     outline: none;
-  }
-  .control{
-    display: block;
   }
 }
 
