@@ -192,6 +192,9 @@ a:hover{
 #leave-comment form .row{
   margin: 0;
 }
+#leave-comment .input{
+  width: 100%;
+}
 #leave-comment form input, #leave-comment form textarea{
   padding: 10px 15px;
   margin-bottom: .8rem;
@@ -213,6 +216,11 @@ a:hover{
   background: #F7F7F7;
   font-size: .5rem;
   color: #858585;
+  transition: all .3s linear;
+}
+#leave-comment form button:hover{
+  background: #858585;
+  color: #F7F7F7;
 }
 #buttom{
   text-align: center;
