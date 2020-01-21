@@ -18,6 +18,9 @@ a:hover{
 .post{
   margin-bottom: 2rem;
 }
+.post > a{
+  display: block;
+}
 .date-block{
   margin: 10px 0;
   width: 25%;
@@ -178,6 +181,13 @@ a:hover{
   #cart .triangle{
     right: 8%;
   }
+
+}
+
+@media (min-width:992px){
+  #cart .triangle{
+    right: 6%;
+  }
   #site-main{
     margin-bottom: 4rem;
   }
@@ -201,24 +211,6 @@ a:hover{
   }
   .sidebar .popular-post .row{
     flex-direction: row-reverse;
-  }
-  .sidebar .popular-post h6, .sidebar .popular-post i{
-    font-size: .8rem;
-    margin-bottom: 0;
-  }
-  .sidebar .tags hr {
-     width: 10%;
- }
- .sidebar .tag{
-   width: 92%;
- }
-}
-
-@media (min-width:992px){
-  #cart .triangle{
-    right: 6%;
-  }
-  .sidebar .popular-post .row{
     align-items: stretch;
     margin-right: 0;
   }
@@ -227,10 +219,14 @@ a:hover{
   }
   .sidebar .popular-post h6, .sidebar .popular-post i{
     font-size: .7rem;
+    margin-bottom: 0;
   }
   .sidebar .tag{
     width: 63%;
   }
+  .sidebar .tags hr {
+    width: 10%;
+ }
  }
  @media (min-width:1200px){
    #cart .triangle{
