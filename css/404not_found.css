@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,800|Source+Sans+Pro:300,400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin: 5rem auto;
+}
+h1, h3{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #545454;
+}
+h3{
+  font-size: 1.5rem;
+}
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #545454;
+}
+a{
+  padding: .8rem;
+  background: #545454;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: #fff;
+  transition: all .3s linear;
+}
+a:hover{
+  text-decoration: none;
+  opacity: .8;
+  color: #fff;
+}
+@media (min-width:576px) {
+  .row{
+    flex-direction: row-reverse;
+  }
+  .code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    margin: 0;
+    font-size: 5rem;
+  }
+}
