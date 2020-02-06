@@ -14,6 +14,7 @@ i.icon-star, i.icon-star-empty{
   outline: none;
 }
 .popup{
+  /* display:none; */
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -29,6 +30,7 @@ i.icon-star, i.icon-star-empty{
  width: 80%;
 }
 .popup h2{
+  margin-top: 2rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
 }
@@ -600,6 +602,15 @@ hr{
   color: #fff;
 }
 @media (min-width:576px) {
+  .dialog .row{
+    background-image: url(../images/imgchair.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .popup .show_none{
+    margin-top: 5rem;
+  }
   .shop-bag div h4,.shop-bag div h6{
     display: block;
   }
