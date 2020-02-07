@@ -41,7 +41,12 @@ $(document).ready(function(){
       subtotal();
     }
   });
-
+  $('.search').click(function(e){
+    $(this).siblings('#searcher').show();
+  });
+  $('#searcher .icon-cancel').click(function(e){
+    $(this).closest('#searcher').hide();
+  });
   function subtotal(){
     var s = 0
     $('#cart li').each(function(){

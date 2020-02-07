@@ -69,6 +69,37 @@ i.icon-cancel{
   color: #F05C5C;
   cursor: pointer;
 }
+#searcher{
+  display: none;
+  height: 60vh;
+  position: fixed;
+  background: #F6F6F6;
+  z-index: 10;
+  top: 20%;
+  left: 0;
+  height: 75vh;
+  width: 100%;
+  border: 2px solid;
+  text-align: center;
+}
+#searcher i{
+  color: #9D9D9D;
+  cursor: pointer;
+}
+#searcher i.icon-cancel{
+  position: absolute;
+  bottom:10%;
+}
+.search-main{
+  margin: 10rem auto;
+}
+.searcher-text{
+  width: 60vw;
+  padding: .5rem;
+  outline: none;
+  background: transparent;
+  border-top: 0;
+}
 .discount-sticker{
   position: absolute;
   top: 5%;
