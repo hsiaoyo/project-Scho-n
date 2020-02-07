@@ -42,6 +42,9 @@ i.icon-star, i.icon-star-empty{
   font-weight: bold;
   color: #FF8283;
 }
+.popup .close{
+  cursor: pointer;
+}
 .popup .email{
   width: 100%;
   padding: .5rem 1rem;
@@ -211,7 +214,7 @@ ul.navbar{
 }
 .intro_1{
   width: 75%;
-  z-index: 90;
+  z-index: 80;
 }
 .intro_1 h4, .second h4, .fourth h4{
   letter-spacing: 2px;
@@ -674,6 +677,9 @@ hr{
   .customer{
     margin-top: 0px;
   }
+  .dropdown-menu {
+    left: -207%;
+  }
   #nav ul.navbar{
     position: static;
   }
@@ -783,6 +789,9 @@ hr{
   .navbar li {
     font-size: .8rem;
     margin-right: 10px;
+  }
+  .dropdown-menu {
+    left: -382%;
   }
   .user-tool a:first-child{
     margin-right: 10px;

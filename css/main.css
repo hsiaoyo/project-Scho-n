@@ -525,6 +525,7 @@ img.payment{
 }
 @media (min-width:768px) {
   .triangle.pd{
+    position: absolute;
     top: 170%;
     left: 24%;
     width: 0;
