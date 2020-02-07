@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  // $('.popup').delay(50000).show();
   $('.user-tool .burger').click(function(e){
     $(e.currentTarget).parent().siblings('ul').toggleClass('display-block');
   });
@@ -21,6 +23,9 @@ $(document).ready(function(){
         }
     }
 })
+  $('.dialog .close').click(function(e){
+    $(this).parents('.popup').fadeOut(500);
+  });
 
 
 })
