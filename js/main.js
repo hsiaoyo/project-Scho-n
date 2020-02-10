@@ -47,6 +47,7 @@ $(document).ready(function(){
   $('#searcher .icon-cancel').click(function(e){
     $(this).closest('#searcher').hide();
   });
+
   function subtotal(){
     var s = 0
     $('#cart li').each(function(){
