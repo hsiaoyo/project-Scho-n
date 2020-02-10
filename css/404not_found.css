@@ -5,7 +5,11 @@
   box-sizing: border-box;
 }
 .container{
-  margin: 5rem auto;
+  position: absolute;
+  top: 25%;
+  margin: 0;
+  padding: 1rem;
+  max-width: 100%;
 }
 h1, h3{
   font-weight: bold;
@@ -33,6 +37,10 @@ a:hover{
   color: #fff;
 }
 @media (min-width:576px) {
+  .container{
+    top: 30%;
+    padding: 2rem;
+  }
   .row{
     flex-direction: row-reverse;
   }
@@ -44,5 +52,17 @@ a:hover{
   h1{
     margin: 0;
     font-size: 5rem;
+  }
+}
+@media (min-width:768px){
+  .container{
+    top: 25%;
+    padding: 4rem;
+  }
+}
+@media (min-width:992px){
+  .container{
+    top: 15%;
+    padding: 8rem;
   }
 }
