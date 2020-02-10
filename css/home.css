@@ -14,38 +14,37 @@ i.icon-star, i.icon-star-empty{
   outline: none;
 }
 .popup{
-  /* display:none; */
-  position: fixed;
+  display:none;
   z-index: 1000;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, .5);
 }
 .dialog{
- position: relative;
- top: 27%;
+ display: none;
  background: #fff;
  margin: 0 auto;
  padding: 1rem;
  width: 80%;
+ z-index: 1001;
 }
-.popup h2{
+.dialog h2{
   margin-top: 2rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
 }
-.popup p{
+.dialog p{
   font-size: .8rem;
   color: #757575;
 }
-.popup span{
+.dialog span{
   font-weight: bold;
   color: #FF8283;
 }
-.popup .close{
+.dialog .close{
   cursor: pointer;
 }
-.popup .email{
+.dialog .email{
   width: 100%;
   padding: .5rem 1rem;
   background: #F2F2F2;
@@ -53,7 +52,7 @@ i.icon-star, i.icon-star-empty{
   border: 0;
   outline: none;
 }
-.popup button{
+.dialog button{
   display: block;
   margin: 1rem 0;
   background: #FF8283;
@@ -62,11 +61,11 @@ i.icon-star, i.icon-star-empty{
   font-size: .8rem;
   color: white;
 }
-.popup .show_none{
+.dialog .show_none{
   display: flex;
   align-items: center;
 }
-.popup .show_none span{
+.dialog .show_none span{
   font-weight: normal;
   font-size: .7rem;
   color: #9a9a9a;

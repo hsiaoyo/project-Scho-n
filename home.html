@@ -19,19 +19,18 @@
   <script src="js/home.js"></script>
 </head>
 <body>
-  <div class="popup">
-    <div class="dialog">
-      <div class="close">X</div>
-      <div class="row">
-        <div class="col-sm-7">
-          <h2>JOIN OUR NEWSLETTER</h2>
-          <p>Subscribe now to get <span>15%</span> off on any product!</p>
-          <input class="email" type="text" metood="post" placeholder="Enter your e-mail">
-          <button class="btn">Subscribe</button>
-          <div class="show_none"><input type="checkbox"><span>Don't show this popup again</span></div>
-        </div>
-        <div class="col-sm-5"></div>
+  <div class="popup"></div>
+  <div class="dialog">
+    <div class="close">X</div>
+    <div class="row">
+      <div class="col-sm-7">
+        <h2>JOIN OUR NEWSLETTER</h2>
+        <p>Subscribe now to get <span>15%</span> off on any product!</p>
+        <input class="email" type="text" metood="post" placeholder="Enter your e-mail">
+        <button class="btn">Subscribe</button>
+        <div class="show_none"><input type="checkbox"><span>Don't show this popup again</span></div>
       </div>
+      <div class="col-sm-5"></div>
     </div>
   </div>
   <div class="modal-background"></div>
@@ -143,7 +142,7 @@
           </li>
         </ul>
         <div class="user-tool">
-          <a href="#"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
+          <a href="#" class="search"><img class="tools" src="images/magnifier@1X-2.png" alt="search"></a>
           <a href="#" class="shop-bag cart">
             <img class="tools" src="images/handbag@1X-2.png" alt="cart">
             <div>
@@ -151,6 +150,14 @@
               <h6><span class="item-num">3</span> items $<span class="total">74.00</span></h6>
             </div>
           </a>
+          <div id="searcher">
+            <div class="search-main">
+              <input class="searcher-text" placeholder="Search..."></input>
+              <a href="#" ><i class="icon-mic-outline"></i></a>
+              <a href="#" target="_blank"><i class="icon-search"></i></a>
+            </div>
+            <i class="icon-cancel"></i>
+          </div>
           <div class="burger">
             <div></div>
             <div></div>

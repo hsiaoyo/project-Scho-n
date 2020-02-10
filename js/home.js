@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-  // $('.popup').delay(50000).show();
+  $('.popup').delay(3000).fadeIn(1000).css({'position':'fixed'});
+  $('.dialog').delay(3000).fadeIn(1000).css({'position':'fixed','top':'27%','left':'10%'});
+
   $('.user-tool .burger').click(function(e){
     $(e.currentTarget).parent().siblings('ul').toggleClass('display-block');
   });
@@ -24,8 +26,11 @@ $(document).ready(function(){
     }
 })
   $('.dialog .close').click(function(e){
-    $(this).parents('.popup').fadeOut(500);
+    $(this).parent('.dialog').fadeOut(500);
+    $(this).parent('.dialog').siblings('.popup').fadeOut(500);
   });
-
+  $('.popup').click(function(e){
+    $('.dialog .close').click();
+  });
 
 })
