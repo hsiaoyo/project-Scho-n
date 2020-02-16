@@ -114,6 +114,10 @@ h2.title{
   left: 20%;
   font-size: 1.2rem;
 }
+.member-info{
+  padding-left: 10px;
+  border-left: 5px solid #ccc;
+}
 .you h2{
   position: absolute;
   top: 45%;
@@ -288,6 +292,10 @@ img.payment{
   }
   #who-we-are h3{
     font-size: 1.4rem;
+  }
+  .you h2{
+    left: 42%;
+    top: 38%;
   }
   #footer{
     margin: 20px 0;
