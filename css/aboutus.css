@@ -126,47 +126,23 @@ h2.title{
   font-size: 1.5rem;
   color: #ADADAD;
 }
-.wrapper1.col-6, .wrapper2.col-6{
-  padding: 10px;
-}
 .wrapper1{
-  display:grid;
-  grid-template-columns: 39% 61%;
-  grid-template-rows: 39% 61%;
-  grid-gap: 10px;
-  grid-template-areas:
-  "box1 box3"
-  "box2 box3";
+  display: flex;
+  flex-direction: column;
+  padding-right: 7.5px;
 }
-.box1{
-  grid-area: box1;
+.wrapper1 img:first-child{
+  padding-bottom: 15px;
 }
-.box2{
-  grid-area: box2;
-}
-.box3{
-  grid-area: box3;
+.wrapper2 img{
+  height: 100%;
 }
 .wrapper2{
-  display:grid;
-  grid-template-columns: 24% 39% 37%;
-  grid-template-rows: 58% 42%;
-  grid-gap: 10px;
-  grid-template-areas:
-  "box4 box5 box7"
-  "box6 box6 box7";
+  padding-left: 7.5px;
 }
-.box4{
-  grid-area: box4;
-}
-.box5{
-  grid-area: box5;
-}
-.box6{
-  grid-area: box6;
-}
-.box7{
-  grid-area: box7;
+.owl-item .row{
+  margin-left: 0;
+  margin-right: 0;
 }
 .company-info{
   margin: 10px 0;
