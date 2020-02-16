@@ -226,16 +226,6 @@ select {
     position: relative;
     padding-right: 2.5rem;
   }
-  .owl-carousel .owl-nav button.owl-prev{
-    display: none;
-  }
-  .owl-carousel .owl-nav button.owl-next{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    height: 100%;
-  }
   .add-action{
     flex-direction: row;
     justify-content: space-between;
@@ -251,12 +241,25 @@ select {
     flex: 0 0 19%;
     max-width: 19%;
   }
+  .owl-carousel{
+    position: static;
+  }
+  .owl-carousel .owl-nav button.owl-next{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem 0;
+    height: 89.59px;
+  }
   .owl-thumbs{
     justify-content: flex-start;
   }
   .owl-thumb-item{
     width: 20%;
     margin-right: .8rem;
+    border: 0;
+    outline: none;
   }
   .related-product{
     justify-content: space-between;
@@ -273,6 +276,7 @@ select {
   .view-image{
     width: 100%;
     align-self:flex-end ;
+    position: relative;
   }
   .slider{
     margin-bottom: 0;
@@ -294,5 +298,13 @@ select {
     display: flex;
     margin-right: 1rem;
     width: 30%;
+  }
+}
+@media (min-width:1200px){
+  .owl-thumb-item {
+    width: 21%;
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    height: 112.97px;
   }
 }
