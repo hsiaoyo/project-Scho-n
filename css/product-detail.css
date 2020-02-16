@@ -20,14 +20,20 @@
 .slider-img{
   margin: 1rem 0;
 }
-.owl-theme .owl-dots{
+.owl-dots{
   display: none;
 }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+  display: none;
   width: 30px;
   margin: 0 1rem;
   background: white;
   outline: none;
+}
+.owl-thumbs{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
 }
 #product-detail{
   margin-bottom: 3rem;
@@ -244,6 +250,13 @@ select {
   .col-lg-2 {
     flex: 0 0 19%;
     max-width: 19%;
+  }
+  .owl-thumbs{
+    justify-content: flex-start;
+  }
+  .owl-thumb-item{
+    width: 20%;
+    margin-right: .8rem;
   }
   .related-product{
     justify-content: space-between;
