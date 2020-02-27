@@ -482,6 +482,9 @@ img.tools{
 .learn-more.only-title{
   padding-left: 15px;
 }
+.subscribe input{
+  outline: none;
+}
 .get-more-info{
   margin: 10px 0;
 }
