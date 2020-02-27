@@ -189,6 +189,19 @@ h2.title{
   left: 1%;
   outline: none;
 }
+.owl-dots{
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+  margin: 1rem auto;
+}
+ .owl-carousel button.owl-dot{
+  border: 2px solid #ccc;
+  width: 2rem;
+ }
+ .owl-carousel button.owl-dot.active{
+   border: 2px solid #000;
+ }
 .company-info{
   margin: 10px 0;
 }
@@ -283,6 +296,9 @@ img.payment{
     top: 35%;
     left: 38%;
     font-size: 1rem;
+  }
+  #workspace{
+    margin-bottom: 3rem;
   }
   .wrapper3{
     padding-left: 0;
