@@ -108,6 +108,13 @@ i.icon-star, i.icon-star-empty{
 }
 .add i{
   font-size: 0.6rem;
+  cursor: pointer;
+}
+.add div{
+  cursor: pointer;
+}
+.browse i{
+  cursor: pointer;
 }
 .browse div:after{
   content:"|";
