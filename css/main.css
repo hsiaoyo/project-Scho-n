@@ -17,7 +17,7 @@ a:hover{
   display: none;
   border-color:transparent;
 }
-.modal-background, .modal{
+.modal-background{
   display: none;
   position: fixed;
   top: 0;
