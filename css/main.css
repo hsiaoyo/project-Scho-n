@@ -496,6 +496,7 @@ img.tools{
   background: #E2E2E2;
   color: #8C8C8C;
   font-size: 0.5rem;
+  outline: none;
 }
 .copyright{
   text-align: center;
