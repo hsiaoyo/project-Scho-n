@@ -6,12 +6,14 @@ $(document).ready(function(){
 
   $('#nav .burger').click(function(e){
     $(this).siblings('ul').addClass('display-block');
-    $(this).parents().siblings('.modal-background').addClass('display-block')
+    $(this).parents().siblings('.modal-background').addClass('display-block');
   });
 
   $('#nav .cart').click(function(e){
     $(this).parents().siblings('#cart').addClass('display-block');
-    $(this).parents().siblings('.modal-background').addClass('display-block')
+    $(this).parents().siblings('.modal-background').addClass('display-block');
+    $(this).closest('ul').find('.dropdown-menu').removeClass('display-block');
+    $(this).closest('ul').find('.triangle').removeClass('display-block');
   });
 
   $('.modal-background').click(function(e){
