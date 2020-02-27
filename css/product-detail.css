@@ -35,6 +35,13 @@
   justify-content: center;
   margin: 1rem 0;
 }
+.owl-thumb-item{
+  margin: 0 .5rem;
+  border: 0;
+}
+button.owl-thumb-item:focus{
+  outline: 5px auto gray;
+}
 #product-detail{
   margin-bottom: 3rem;
   background: #F6F6F6;
@@ -257,9 +264,9 @@ select {
   }
   .owl-thumb-item{
     width: 20%;
+    margin: 0;
     margin-right: .8rem;
     border: 0;
-    outline: none;
   }
   .related-product{
     justify-content: space-between;
