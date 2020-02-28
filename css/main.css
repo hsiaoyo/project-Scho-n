@@ -496,6 +496,8 @@ img.tools{
   background: #E2E2E2;
   color: #8C8C8C;
   font-size: 0.5rem;
+}
+.get-more-info .rounded-pill:focus{
   outline: none;
 }
 .copyright{
